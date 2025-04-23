@@ -19,5 +19,5 @@ mdc: true
 ## Zarhus Developer Meetup
 
 ---
-src: ./pages/crosscon-hv/index.md
+src: ./pages/crosscon-hv-zarhus.md
 ---
