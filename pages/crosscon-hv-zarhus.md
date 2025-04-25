@@ -180,7 +180,7 @@ order to get this to work.
 
 ---
 
-## Current Status & Demo
+## Current Status
 
 <v-clicks>
 
@@ -219,6 +219,21 @@ If you are interested in the technical aspects of this integration - the
 challenges that had to be overcome and the thought processes behind the
 approach I took to tackle them, you can visit the blog post - it's about 10
 minutes of relatively light reading
+-->
+
+---
+layout: cover
+background: /intro.png
+class: text-center
+---
+
+##  Demo
+
+
+<!--
+say something like time to now showcase this setup in action (?)
+since i assume in this section i will actually switch to the terminal,
+open up minicom and show how it boots/works (?)
 -->
 
 ---
