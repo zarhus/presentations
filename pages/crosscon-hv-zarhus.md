@@ -78,7 +78,7 @@ layout: two-cols-header
 
 ## CROSSCON Hypervisor Recap
 
-<center><img src="/crosscon-logo.png" height="220px"></center>
+<center><img src="/img/crosscon-logo-2.png" width="200px"></center>
 
 <v-clicks>
 
@@ -128,8 +128,12 @@ for security tests a lot more tedious than it needs to be
 -->
 
 ---
+layout: two-cols-header
+---
 
 ## Build Steps & Guide
+
+::left::
 
 <v-clicks>
 
@@ -148,6 +152,13 @@ Full guide [in the Zarhus docs](https://docs.zarhus.com/guides/rpi4-crosscon-hyp
 [Blog post](https://blog.3mdeb.com/2025/2025-04-10-crosscon-its-hypervisor-and-zarhus/)
 
 </v-clicks>
+
+::right::
+
+<center>
+  <img src="/img/zarhus_logo.png" width="200" style="filter: invert(1); margin-bottom: 20px;" />
+  <img src="/img/yocto-logo.png" width="200" style="filter: invert(1);" />
+</center>
 
 <!--
 there are a couple of steps that need to be done correctly in order to get our
