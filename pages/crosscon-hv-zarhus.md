@@ -248,6 +248,16 @@ open up minicom and show how it boots/works (?)
 [this PR](https://github.com/zarhus/meta-zarhus/pull/54)
 * Finding a **fix**, not a workaround to the `magic printk` issue
 
+If you would like to contribute/have some clues/feedback:
+* feel free to contribute to the `magic printk` issue
+[here](https://github.com/crosscon/CROSSCON-Hypervisor-and-TEE-Isolation-Demos/issues/8#issuecomment-2810046951)
+* you can add to the [existing PR](https://github.com/zarhus/meta-zarhus/pull/54)
+* or raise an issue in [`meta-zarhus` repo](https://github.com/zarhus/meta-zarhus/issues)
+
+Finally for the tinkerers:
+* the image is available
+[here](https://cloud.3mdeb.com/index.php/s/4ogfcMPRrKx5YZ2) and
+[here](https://cloud.3mdeb.com/index.php/s/tGkgdawz8rE8m7E)
 </v-clicks>
 
 <!--
@@ -260,6 +270,12 @@ now running into problems with `OPTEE-OS` VM, TA-dump and crashes
 * while the `magic prinkt` issue doesn't alter the functionality of the setup,
 it's very annoying. Finding the fix is not really within our scope of
 operations though - that's more up to the developers who wrote the Hypervisor.
+
+say that the listeners can also contribute, in the respective issue, PR or
+raise general issue in meta-zarhus
+
+tell people about the image, good option if you don't want to build everything
+yourself.
 -->
 
 ---
