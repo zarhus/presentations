@@ -195,12 +195,19 @@ order to get this to work.
 * Working linux environment
 </v-click>
 
+[Blog post](https://blog.3mdeb.com/2025/2025-04-10-crosscon-its-hypervisor-and-zarhus/)
+
 </v-clicks>
 
 <!--
 mention how all of these things allow us:
 * seamless integration of future tools/apps - just make a recipe and that's it
 * easy gathering of logs
+
+If you are interested in the technical aspects of this integration - the
+challenges that had to be overcome and the thought processes behind the
+approach I took to tackle them, you can visit the blog post - it's about 10
+minutes of relatively light reading
 -->
 
 ---
