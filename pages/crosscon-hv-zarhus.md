@@ -134,7 +134,7 @@ for security tests a lot more tedious than it needs to be
 <v-clicks>
 
 <span style="display: block; height: 2rem;"></span>
-<center><img src="/img/diagram-crosscon-hv-setup.png" width="450px"></center>
+<center><img src="/img/diagram-crosscon-hv-setup.png" width="450px" style="filter: invert(1);"></center>
 
 </v-clicks>
 
