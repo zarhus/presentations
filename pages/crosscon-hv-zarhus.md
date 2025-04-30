@@ -253,6 +253,7 @@ If you would like to contribute/have some clues/feedback:
 [here](https://github.com/crosscon/CROSSCON-Hypervisor-and-TEE-Isolation-Demos/issues/8#issuecomment-2810046951)
 * you can add to the [existing PR](https://github.com/zarhus/meta-zarhus/pull/54)
 * or raise an issue in [`meta-zarhus` repo](https://github.com/zarhus/meta-zarhus/issues)
+* always a good idea to join the conversation in the [Zarhus Matrix Workspace](https://matrix.to/#/#zarhus:matrix.org)
 
 Finally for the tinkerers:
 * the image is available
@@ -286,8 +287,12 @@ class: text-center
 
 ## Q&A
 
+Social media links:
+* [Zarhus](https://x.com/Zarhus_com)
+* [CROSSCON](https://x.com/crosscon_eu)
+
 <center>
-  <img src="/img/zarhus_logo.png" width="300px" style="margin-left:-20px;filter: invert(1);">
+  <img src="/img/zarhus_logo.png" width="250px" style="margin-left:-20px;filter: invert(1);">
 </center>
 
 [Zarhus docs official guide](https://docs.zarhus.com/guides/rpi4-crosscon-hypervisor/)
