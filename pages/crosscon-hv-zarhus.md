@@ -128,6 +128,17 @@ for security tests a lot more tedious than it needs to be
 -->
 
 ---
+
+## Visualization of the stack
+
+<v-clicks>
+
+<span style="display: block; height: 2rem;"></span>
+<center><img src="/img/diagram-crosscon-hv-setup.png" width="450px"></center>
+
+</v-clicks>
+
+---
 layout: two-cols-header
 ---
 
@@ -288,11 +299,13 @@ class: text-center
 ## Q&A
 
 Social media links:
-* [Zarhus](https://x.com/Zarhus_com)
-* [CROSSCON](https://x.com/crosscon_eu)
+
+[Zarhus](https://x.com/Zarhus_com)
+
+[CROSSCON](https://x.com/crosscon_eu)
 
 <center>
-  <img src="/img/zarhus_logo.png" width="250px" style="margin-left:-20px;filter: invert(1);">
+  <img src="/img/zarhus_logo.png" width="230px" style="margin-left:-20px;filter: invert(1);">
 </center>
 
 [Zarhus docs official guide](https://docs.zarhus.com/guides/rpi4-crosscon-hypervisor/)
