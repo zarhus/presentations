@@ -130,6 +130,8 @@ Key points to make:
     ![OpenBMC CI](/img/openbmc_ci.png)
 - *Claims* to support many platfroms already, including the X11SPI
 - Does it tho?
+- Honorable mention: Pionieers:
+[Hardened Vault](https://hardenedvault.net/blog/2024-03-15-openbmc-x11ssh-port/)
 
 </v-clicks>
 
@@ -140,13 +142,16 @@ Key points to make:
 If a platform is not regularly tested in CI, you can't be certain that it
 actually works, thus it's hard to call it supported.
 * That indeed was an issue, but I'll talk about on the next slide.
+* HardenedVault were first to run run OpenBMC on x11ssh on a real hardware.
+* I learned very late in development about their blogpost, but thanks to them
+figuring out console redirection was a breeze.
 -->
 
 ---
 
 ## Building X11SSH configuration
 
-<pre class="font-mono bg-black text-white rounded p-4 overflow-auto max-w-full max-h-[45vh] text-sm leading-none">
+<pre class="font-mono bg-black text-white rounded max-w-full max-h-[45vh] text-sm leading-none">
   <v-clicks>
     <span>
       [<span class="text-red-500 font-bold">FAILED</span>] Built X11SPI base configuration
@@ -170,7 +175,13 @@ actually works, thus it's hard to call it supported.
       [<span class="text-green-400 font-bold">  OK  </span>] Fixed system manager issue
     </span>
     <span>
-      [<span class="text-green-400 font-bold">  OK  </span>] 🎉 Booted built image under QEMU 🎉
+      [<span class="text-green-400 font-bold">  OK  </span>] Booted built image under QEMU
+    </span>
+    <span>
+      [<span class="text-green-400 font-bold">  OK  </span>] Redirect the console
+    </span>
+    <span>
+      [<span class="text-green-400 font-bold">  OK  </span>] 🎉 Run built image on HW 🎉
     </span>
   </v-clicks>
 </pre>
@@ -220,7 +231,6 @@ Key points to make:
   * The configuration for two managers was inherited from the common layer for
   supermicro platforms, which would mean that x11spi would suffer from the
   same issue (did not test that)
-
 -->
 
 ---
@@ -250,10 +260,19 @@ Key points to make:
 
 ---
 
+## References
+
+- [Blog post](https://blog.3mdeb.com/2025/2025-04-28-zarhusbmc/)
+- [Hardened Vault blog post](https://hardenedvault.net/blog/2024-03-15-openbmc-x11ssh-port/)
+- [Yocto project developer day 2023](https://www.youtube.com/watch?v=ljQg8dnyhLU)
+- [3mdeb at FOSDEM](https://fosdem.org/2025/schedule/track/bmc/)
+
+---
+layout: cover
+---
+
 ## Q&A
 
 <center>
   <img src="/img/zarhus_logo.png" width="300px" style="margin-left:-20px;filter: invert(1);">
 </center>
-
-[Blog post](https://blog.3mdeb.com/2025/2025-04-28-zarhusbmc/)
