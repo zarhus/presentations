@@ -16,7 +16,7 @@ mdc: true
 
 ---
 
-## &#x1F44B; Zarhuse Developers Meetup 0x1  👨‍💻
+## &#x1F44B; Zarhus Developers Meetup 0x1  👨‍💻
 
 ---
 src: <SRC>
