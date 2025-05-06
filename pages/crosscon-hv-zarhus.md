@@ -133,8 +133,12 @@ for security tests a lot more tedious than it needs to be
 
 <v-clicks>
 
+<!-- markdownlint-disable MD013 -->
+
 <span style="display: block; height: 2rem;"></span>
 <center><img src="/img/diagram-crosscon-hv-setup.png" width="450px" style="filter: invert(1);"></center>
+
+<!-- markdownlint-enable MD013 -->
 
 </v-clicks>
 
@@ -149,14 +153,14 @@ layout: two-cols-header
 <v-clicks>
 
 1. **Yocto Environment Setup**
-- Building Zarhus for `raspberrypi4-64`
+    + Building Zarhus for `raspberrypi4-64`
 2. **CROSSCON Configuration**
-- Assign CPU/mem/devices
-- Tweak device tree file
+    + Assign CPU/mem/devices
+    + Tweak device tree file
 3. **Putting it all together**
-- Flash SD properly
+    + Flash SD properly
 4. **Deploy & Validate**
-- Boot Zarhus with rootfs VM on RPi4
+    + Boot Zarhus with rootfs VM on RPi4
 
 Full guide [in the Zarhus docs](https://docs.zarhus.com/guides/rpi4-crosscon-hypervisor/)
 
@@ -166,10 +170,14 @@ Full guide [in the Zarhus docs](https://docs.zarhus.com/guides/rpi4-crosscon-hyp
 
 ::right::
 
+<!-- markdownlint-disable MD013 -->
+
 <center>
   <img src="/img/zarhus_logo.png" width="200" style="filter: invert(1); margin-bottom: 20px;" />
   <img src="/img/yocto-logo.png" width="200" style="filter: invert(1);" />
 </center>
+
+<!-- markdownlint-enable MD013 -->
 
 <!--
 there are a couple of steps that need to be done correctly in order to get our
@@ -199,22 +207,22 @@ order to get this to work.
 
 <v-click>
 
-* Zarhus kernel working on the CROSSCON Hypervisor
+- Zarhus kernel working on the CROSSCON Hypervisor
 </v-click>
 
 <v-click>
 
-* `rootfs` mounting properly
+- `rootfs` mounting properly
 </v-click>
 
 <v-click>
 
-* Serial port issues fixed
+- Serial port issues fixed
 </v-click>
 
 <v-click>
 
-* Working linux environment
+- Working linux environment
 </v-click>
 
 [Blog post](https://blog.3mdeb.com/2025/2025-04-10-crosscon-its-hypervisor-and-zarhus/)
@@ -238,8 +246,7 @@ background: /intro.png
 class: text-center
 ---
 
-##  Demo
-
+## Demo
 
 <!--
 say something like time to now showcase this setup in action (?)
@@ -254,20 +261,20 @@ open up minicom and show how it boots/works (?)
 <v-clicks>
 
 **Next Steps:**
-* `xtest` and full `OPTEE-OS` support
+- `xtest` and full `OPTEE-OS` support
 > Currently working on it in
 [this PR](https://github.com/zarhus/meta-zarhus/pull/54)
-* Finding a **fix**, not a workaround to the `magic printk` issue
+- Finding a **fix**, not a workaround to the `magic printk` issue
 
 If you would like to contribute/have some clues/feedback:
-* feel free to contribute to the `magic printk` issue
+- feel free to contribute to the `magic printk` issue
 [here](https://github.com/crosscon/CROSSCON-Hypervisor-and-TEE-Isolation-Demos/issues/8#issuecomment-2810046951)
-* you can add to the [existing PR](https://github.com/zarhus/meta-zarhus/pull/54)
-* or raise an issue in [`meta-zarhus` repo](https://github.com/zarhus/meta-zarhus/issues)
-* always a good idea to join the conversation in the [Zarhus Matrix Workspace](https://matrix.to/#/#zarhus:matrix.org)
+- you can add to the [existing PR](https://github.com/zarhus/meta-zarhus/pull/54)
+- or raise an issue in [`meta-zarhus` repo](https://github.com/zarhus/meta-zarhus/issues)
+- always a good idea to join the conversation in the [Zarhus Matrix Workspace](https://matrix.to/#/#zarhus:matrix.org)
 
 Finally for the tinkerers:
-* the image is available
+- the image is available
 [here](https://cloud.3mdeb.com/index.php/s/4ogfcMPRrKx5YZ2) and
 [here](https://cloud.3mdeb.com/index.php/s/tGkgdawz8rE8m7E)
 </v-clicks>
@@ -304,9 +311,13 @@ Social media links:
 
 [CROSSCON](https://x.com/crosscon_eu)
 
+<!-- markdownlint-disable MD013 -->
+
 <center>
   <img src="/img/zarhus_logo.png" width="230px" style="margin-left:-20px;filter: invert(1);">
 </center>
+
+<!-- markdownlint-enable MD013 -->
 
 [Zarhus docs official guide](https://docs.zarhus.com/guides/rpi4-crosscon-hypervisor/)
 
