@@ -128,7 +128,7 @@ Key points to make:
 - Actively developed
 - [Public CI](https://jenkins.openbmc.org/job/ci-openbmc/) set up
     ![OpenBMC CI](/img/openbmc_ci.png)
-- *Claims* to support many platforms already, including the X11SPI
+- _Claims_ to support many platforms already, including the X11SPI
 - Does it tho?
 - Honorable mention: Pionieers:
 [Hardened Vault](https://hardenedvault.net/blog/2024-03-15-openbmc-x11ssh-port/)
@@ -150,6 +150,8 @@ figuring out console redirection was a breeze.
 ---
 
 ## Building X11SSH configuration
+
+<!-- markdownlint-disable MD013 -->
 
 <pre class="font-mono bg-black text-white rounded max-w-full max-h-[45vh] text-sm leading-none">
   <v-clicks>
@@ -185,6 +187,8 @@ figuring out console redirection was a breeze.
     </span>
   </v-clicks>
 </pre>
+
+<!-- markdownlint-enable MD013 -->
 
 <!--
 Key points to make:
@@ -239,7 +243,7 @@ background: /intro.png
 class: text-center
 ---
 
-##  Demo
+## Demo
 
 ---
 
@@ -281,6 +285,10 @@ layout: cover
 
 ## Q&A
 
+<!-- markdownlint-disable MD013 -->
+
 <center>
   <img src="/img/zarhus_logo.png" width="300px" style="margin-left:-20px;filter: invert(1);">
 </center>
+
+<!-- markdownlint-enable MD013 -->
