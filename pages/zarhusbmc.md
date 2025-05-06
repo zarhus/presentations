@@ -262,10 +262,18 @@ Key points to make:
 
 ## References
 
+References:
 - [Blog post](https://blog.3mdeb.com/2025/2025-04-28-zarhusbmc/)
 - [Hardened Vault blog post](https://hardenedvault.net/blog/2024-03-15-openbmc-x11ssh-port/)
 - [Yocto project developer day 2023](https://www.youtube.com/watch?v=ljQg8dnyhLU)
+- [OpenBMC presentation](https://3mdeb.com/events/#_yocto-project-dev-days)
 - [3mdeb at FOSDEM](https://fosdem.org/2025/schedule/track/bmc/)
+
+Resources:
+- [X11SSH Gerber files](https://github.com/mithro/x11ssh-f-pcb) (Thanks to Tim Ansell)
+- [OpenBMC developer docs](https://github.com/openbmc/docs/blob/master/development/README.md)
+- [Flashing image via SPI](https://github.com/Keno/bmcnonsense/blob/master/blog/05-flashing3.md)
+- [supermicro-x11-bmc on QEMU](https://www.qemu.org/docs/master/system/arm/aspeed.html)
 
 ---
 layout: cover
