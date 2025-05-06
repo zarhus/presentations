@@ -79,7 +79,7 @@ CPU.
 <v-clicks>
 
 - cache level - there can be multiple caches e.g. L1/L2/L3
-  - each next level is slower and bigger
+    + each next level is slower and bigger
 - LLC - Last Level Cache - highest level cache
 - cache hit - data was in cache, fast access
 - cache miss - data wasn't in cache, slower access
@@ -182,8 +182,8 @@ way contains additional bit to denote whether cache line is valid/dirty
 - work by manipulating cache (directly or indirectly) and timing e.g. memory
   access time, program execution time, etc.
 - varying granularity
-  - more precise - cache line
-  - less precise - cache set.
+    + more precise - cache line
+    + less precise - cache set.
 
 </v-clicks>
 
@@ -207,8 +207,8 @@ Below are 3 attack I focused on. There are many more.
 - `Flush+Reload` - the easiest attack described here. It consists of 2 parts:
   <v-clicks>
 
-  - `Flush` - flush/evict shared memory from the cache
-  - `Reload` - measure reload time of evicted memory
+    + `Flush` - flush/evict shared memory from the cache
+    + `Reload` - measure reload time of evicted memory
 
   </v-clicks>
 
@@ -237,9 +237,9 @@ Below are 3 attack I focused on. There are many more.
   steps:
   <v-clicks>
 
-  - `Prime` - fill cache lines with your own data
+    + `Prime` - fill cache lines with your own data
   <!--        ^or cache sets.  ^i.e. make sure cache contains only your data -->
-  - `Probe` - reload your data and time it. If it's cache hit then someone
+    + `Probe` - reload your data and time it. If it's cache hit then someone
     accessed memory that maps to this cache set.
 
   </v-clicks>
@@ -259,8 +259,8 @@ Below are 3 attack I focused on. There are many more.
 
 - PoC tested on X86 and ARMv8 (RPI4)
 - 2 programs
-  - victim - uses shared library
-  - attacker - tries to find out which cache lines were used by victim
+    + victim - uses shared library
+    + attacker - tries to find out which cache lines were used by victim
 - `Flush+Reload` & `Evict+Time` worked on X86
 - `Flush+Reload` on RPI4 failed due to less precise timing (too many false
   positives).
@@ -314,7 +314,7 @@ to or mmaped-->
 - first VM (victim) will calculate median time it takes to finish function that
   uses shared memory and then run it in an infinite loop and report difference
   from baseline it established earlier.
-  - for simplicity’s sake victim program will time itself
+    + for simplicity’s sake victim program will time itself
 - second VM (attacker) will continuously evict requested cache lines.
 
 Without cache coloring there should be noticeable jump in first VM reported time
