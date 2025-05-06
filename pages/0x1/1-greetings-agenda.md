@@ -254,15 +254,33 @@ mission and vision mean in practice?
 
 ---
 
-TODO: add DTS and RTE stats
+<center><img src="/img/0x1/meta-dts-12m.png" width="850px"></center>
+
+<center>
+
+https://github.com/Dasharo/meta-dts
+
+</center>
 
 ---
 
-# Zarhus Team Events presence over last year
+<center><img src="/img/0x1/meta-rte-12m.png" width="850px"></center>
 
-<center><img src="/img/0x1/dts_status_on_dug8.png" width="750px"></center>
+<center>
+
+https://github.com/3mdeb/meta-rte
+
+</center>
+
+---
+
+<center><img src="/img/0x1/dts_status_on_dug8.png" width="650px"></center>
+
+<center>
 
 https://cfp.3mdeb.com/developers-vpub-0xd-2024/talk/QKJYGJ/
+
+</center>
 
 ---
 
@@ -274,15 +292,25 @@ https://cfp.3mdeb.com/developers-vpub-0xd-2024/talk/QKJYGJ/
 
 ---
 
-# Zarhus Issues repo stats
+# Upcoming
 
----
-
-# Contribution
+* ZarhusBMC.
+* OpenWRT for x86.
+* Secure Boot for other Rockchip based platforms.
+* ML for embedded systems.
+* Boot time optimization for Slimbootloader bootstrapped industrial hardware.
+* Work on GPU and crypto.
+* Improve contribution to embedded Linux related projects `17065 insertions(+), 661 deletions(-)`
 
 ---
 
 # Community
+
+* Github has only activity from Zarhus Team.
+* On Matrix we have our small community.
+  * https://matrix.to/#/#zarhus:matrix.3mdeb.com
+  * Three rooms: General, Support and Random
+  * Currently space has 22 members.
 
 ---
 
