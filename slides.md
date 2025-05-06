@@ -19,5 +19,5 @@ mdc: true
 ## Zarhus Developer Meetup
 
 ---
-src: ./pages/crosscon-hv/index.md
+src: ./pages/0x1/1-greetings-agenda.md
 ---

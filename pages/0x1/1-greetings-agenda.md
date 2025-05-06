@@ -18,7 +18,7 @@ class: text-center
 <!--
 
 We would like to give you a heads up about the vision and mission of Zarhus OS.
-It is not only about marketing but also about honest openness, authenticity,
+It is not only about marketing but also about honesty, openness, authenticity,
 and accountability, which should be the foundation of every project focusing on
 trustworthiness.
 
@@ -45,6 +45,8 @@ Trust** and  leveraging the **Chain of Trust** up to the target application._
 
 ## Zarhus Developers Meetup
 
+<br>
+
 - Forum where Zarhus Team and Partners share knowledge and inform about
   Zarhus-related development.
 - It would be quarterly event.
@@ -53,6 +55,8 @@ Trust** and  leveraging the **Chain of Trust** up to the target application._
 - Recordings will be published on YouTube.
 
 <!--
+
+At least we hope for event per quarter.
 
 Format.
 
@@ -66,7 +70,7 @@ If no questions I will try to spin off some discussion and gather some ideas.
 
 <br>
 
-#### &#x1F44B; 18:00 CET Welcome Zarhus Developers Meetup, by Piotr
+#### &#x1F44B; 18:00 CET Welcome Zarhus Developers Meetup, by Piotr &#x1F448; You Are Here
 <br>
 
 #### &#x1F512; 18:25 CET Kicksecure's ram-wipe against RAM attacks, by Daniil
@@ -85,35 +89,123 @@ If no questions I will try to spin off some discussion and gather some ideas.
 
 ---
 layout: two-cols
+clicks: 8
 ---
 
 #
 
 Mission and Vision for Zarhus, Trustworthy Embedded Linux Distro.
 
+<v-clicks>
+
 ### Mission
 
-- Simplify enabling advanced hardware security and performance in embedded systems.
-- Deliver a trustworthy embedded Linux distribution based on Yocto.
-- Ensure honest openness, authenticity, and accountability as core values.
+* Host vMeetups and F2F training confs to boost embedded systems booting and
+security.
+- Navigate through growing complexity of boot chain of modern computing.
+* Simplifying hardware security enablement.
 
 ### Vision
 
-- Become the leading embedded Linux distribution for secure and trusted hardware platforms.
-- Set a benchmark for trustworthiness in embedded systems through transparency and innovation.
+* Systems become secure, trustworthy, and repairable.
+- Modern tools enhances creativity and collaboration without replacing human
+purpose.
+* Communities can thrive with technology that respects freedom, simplicity, and
+sovereignty.
+
+</v-clicks>
 
 ::right::
 
 <center><img src="/img/0x1/zarhus_slogan.png" width="550px"></center>
 
-
 <!--
+[click]
+Let's start with the mission.
 
-Application level-wise.
+[click]
+
+- First, We cannot delude ourselves; AI and LLMs are here and will not go
+anywhere especially after consuming whatever data lies in their path.
+- Paradigms like vibecoding or vibeopsing are new way of delivering value.
+- So, Companies developing embedded software must enhance their resilience to
+avoid losing the game, as it was seen in the consumer OS market. Despite that, there
+may still be some hope there.
+- That resiliency exists in the self-hosted and private models. Zarhus as an
+embedded system boot and security-focused team cannot ignore this trend without
+addressing it.
+- We, definitely, would like to explore questions like:
+- Who and what loads models on our shiny new hardware?
+- What is the role of peripheral MCUs in the boot chain? How can we make those
+components more trustworthy?
+- What is the correct way of using new paradigms and tooling, while staying
+independent, and keeping our digital sovereignty?
+- That's why we would like to keep the discussion open and provide help when
+needed via vMeetups and F2F training conferences.
+- Without that, we could not attest our creation.
+- In the long run, we also hope for live coding streams and sessions
+- And, perhaps discussion is not always about embedded systems and software, as
+we are also present in ecosystems for fully featured OSes like Qubes OS,
+Kicksecure, FreeBSD, OpenWRT, Debian, Fedora, and various others.
+
+[click]
+
+Platforms are increasingly complex boot processes due to a lack of innovation
+in operating systems, which is leading to the introduction of new peripheral
+MCUs: Microsoft Pluton, Google Titan, Amazon Nitro, Apple T2, AMD Secure
+Processor, Intel CSME, and OCP Caliptra.
+- That is just the root of trust; there are other components coming: power
+management controller, audio controller, sensors, USB-PD, etc.
+- The boot process is becoming increasingly complex; this seems inevitable.
+- This is not the end of the story because we often face trade-offs, with
+vendors cutting corners to deliver as much flash as possible and eye-catching
+experiences, often at the cost of modularity. This leads to states that are
+unacceptable for upstream projects. Flashy solutions decline as quickly as
+vendors lose sales volumes due to new generations of devices, which leads to a
+massive amount of bit rot code, e-waste, and undermines the fundamental right
+to repair. We are not extremists here, but trying to be reasonable enthusiasts
+and pragmatists regarding the right to repair.
+- We see it as an opportunity to provide value where we have experience:
+Bootstrapping, so open boot chain, reproducible builds, and full source
+bootstrapped build systems for long-term stability and the circular economy.
+
+[click]
+- Simplify enabling hardware security.
+- We focus primarily on Cortex-A class devices, but we have no issue dealing
+with x86, RISC-V, when powerful enough, and POWER.
+- By hardware security, we mean Root of Trust, especially for measurement
+because of our expertise with Trusted Computing,
+- Root of Trust for Identity - where we closely look at TCG DICE
+- Root of Trust for Updates - with various update schemes we implemented over
+ythe ears,
+- Root of Trust for Recovery - which is key to resilience of any embedded
+system, and with upcoming high assurance Dynamic Root of Trust platforms can
+become a reality not only in proprietary x86 world but also in ARM, POWER, and
+maybe someday also in RISC-V
+- Chain of Trust, often mixed as Secure Boot,
+- Trusted Execution Environments and strong hardware isolation instead of
+containers (and no question about that, containers also have a place in our
+stack)
+
+[click]
+- Where it would lead us?
+
+[click]
+
+To the realm where systems become more secure, trustworthy and repairable.
+
+[click]
+
+Where modern tools enhance creativity and collaboration instead of replacing
+humans in that.
+
+[click]
+
+Finally communities can thrive thanks to technology which respect freedom,
+simplicity and sovereignty.
 
 http://dl.3mdeb.com/dasharo/dug/5/Zarhus_Trustworthy_Embedded_Linux_Distro.pdf
 https://youtu.be/17ZImUA0JSw
-
 -->
 
 ---
@@ -122,45 +214,63 @@ https://youtu.be/17ZImUA0JSw
 
 Strategy
 
-- Extend core firmware (U-Boot, ARM Trusted Firmware, Linux Kernel) to build a robust Root and Chain of Trust.
-- Integrate advanced hardware security features: secure storage, secure elements, dTPM, OP-TEE-based fTPM, and encrypted rootfs.
+- Extend core firmware components (U-Boot, ARM Trusted Firmware, Linux Kernel)
+towards a fully open, reproducible, and auditable Root and Chain of Trust.
+* Integrate cutting-edge hardware security building blocks (secure storage,
+secure elements, embedded dTPM solutions, OP-TEE-based firmware TPM, encrypted
+root filesystems) for measurable integrity and resilience.
 - Develop tooling for RoT and CoT with long term maintainability in mind.
-- Collaborate closely with the Dasharo ecosystem for advanced testing and certification. Maximize synergy across the stack (more about that later).
-- Draw inspiration from projects like OpenXT and Qubes OS.
-- Project progress reporting using derivative products and demo-driven approach.
+- Collaboratively participate in communities aligned with freedom, sovereignty,
+and simplicity, particularly those around Dasharo, OpenXT, Qubes OS,
+Kicksecure, FreeBSD, OpenWRT, Debian, Fedora, and similar technology ecosystems
+- Adopt an iterative, demo-driven approach to project execution, continuously
+communicating progress via derivative products that illustrate real-world
+applicability and verify ideas against practical scenarios.
+- Project progress reporting using derivative products and demo-driven
+approach.
+
+<!--
+
+Last from triad which set ground for Zarhus Team. What those big words from
+mission and vision mean in practice?
+
+-->
 
 ---
 
-<center><img src="/img/0x1/zarhus_in_ecosystem.png" width="800px"></center>
+<center><img src="/img/0x1/zarhus_in_ecosystem.png" width="750px"></center>
 
 ---
 
-# Inevitable side-effect
+<center><img src="/img/0x1/zarhus_on_github.png" width="640px"></center>
 
-* Multimedia, quality of life and UX features like fast logo display,
-animations during boot-up or hardware video decoding, which are common in
-consumer devices like Android phones require more work than usual.
+### <center>https://github.com/zarhus</center> 
 
-- **Why?**  
-  Our main priority is security and long-term maintainability over cosmetic or typical user features.  
-  We use official, well-maintained software (upstream kernels, bootloaders, and security environments) instead of code provided by hardware vendors that might be less secure or harder to keep updated.
+<!--
 
-- **How does this cause the limitation?**  
-  By not using vendor-specific short-cuts or binary blobs (which might enable early graphics), we don’t get early access to graphics hardware. This means users may see a basic boot process instead of a polished animation until Linux is running.
+# Slowly building our presence and activity on Github.
 
-- **Can this be improved?**  
-  Yes, but it would take major effort and cost—as it would require serious boot-time optimization and possibly some compromise on our core values for security and maintainability.
+-->
 
-- **What’s next?**  
-  We prefer focusing on our original agreement (static images, secure, maintainable system). If you need these extra features, we can discuss them as new projects or support packages in the future.
+---
+
+TODO: add DTS and RTE stats
 
 ---
 
 # Zarhus Team Events presence over last year
 
+<center><img src="/img/0x1/dts_status_on_dug8.png" width="750px"></center>
+
+https://cfp.3mdeb.com/developers-vpub-0xd-2024/talk/QKJYGJ/
+
 ---
 
 # Zarhus Team Events Roadmap
+
+* Preliminary dates for future Zarhus Developers Meetups
+  - ZDM 0x2: **5th August 2025**
+  - ZDM 0x3: **4th November 2025**
 
 ---
 
@@ -187,5 +297,37 @@ class: text-center
 <!--
 
 Comment to satisfy pre-commit
+
+-->
+---
+
+layout: cover
+background: /intro.png
+class: text-center
+
+---
+
+# Backup
+
+<!--
+
+# Inevitable side-effect
+
+* Multimedia, quality of life and UX features like fast logo display,
+animations during boot-up or hardware video decoding, which are common in
+consumer devices like Android phones require more work than usual.
+
+- **Why?**  
+  Our main priority is security and long-term maintainability over cosmetic or typical user features.  
+  We use official, well-maintained software (upstream kernels, bootloaders, and security environments) instead of code provided by hardware vendors that might be less secure or harder to keep updated.
+
+- **How does this cause the limitation?**  
+  By not using vendor-specific short-cuts or binary blobs (which might enable early graphics), we don’t get early access to graphics hardware. This means users may see a basic boot process instead of a polished animation until Linux is running.
+
+- **Can this be improved?**  
+  Yes, but it would take major effort and cost—as it would require serious boot-time optimization and possibly some compromise on our core values for security and maintainability.
+
+- **What’s next?**  
+  We prefer focusing on our original agreement (static images, secure, maintainable system). If you need these extra features, we can discuss them as new projects or support packages in the future.
 
 -->
