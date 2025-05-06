@@ -242,6 +242,81 @@ mission and vision mean in practice?
 
 ---
 
+<center><img src="/img/0x1/zarhus-dasharo-relation.png" width="650px"></center>
+
+<!--
+
+What is relation to Dasharo
+
+-->
+
+---
+
+<center><img src="/img/0x1/zarhus_value_prop.svg" width="750px"></center>
+
+<!--
+
+What is value proposition?
+
+-->
+
+---
+
+<center><img src="/img/0x1/zarhus_supported_hw.svg" width="750px"></center>
+
+<!--
+
+What hardware vendors we are working with?
+
+-->
+
+---
+zoom: 0.9
+---
+
+# How community can use it?
+
+* Prerequisites:
+  * At least basic Yocto understanding is required
+  * Understanding of kas (setup tool for bitbake based projects) is recommended
+* Keep checking progress on:
+  - https://docs.zarhus.com/
+  - https://github.com/zarhus
+    - we create roadmap under `zarhus-issues` and will track our progress there
+    - we will inform you during DUGs
+* Currently most repositories are still in 3mdeb organization (32) in private gitlab (37)
+  - https://github.com/3mdeb - search for `meta` keyword
+  - most of the code is MIT-licensed
+* In total it is 87k lines of code of 17k we already contributed upstream.
+* Meanwhile for direct business needs we designed, developed and delivered over
+  400k lines of code.
+  - With Zarhus we want to change this proportions.
+
+---
+zoom: 0.9
+---
+
+# How to buy it?
+
+* Indirectly through Dasharo Entry Subscription or obtaining RTE (limited to
+  product needs):
+  - https://shop.3mdeb.com/product-category/dasharo-entry-subscription/
+  - https://shop.3mdeb.com/shop/open-source-hardware/rte/
+* Through productised services: https://shop.3mdeb.com/product-category/services/
+  - Secure Boot integration for NXP and Rockchip
+  - TPM and UEFI Secure Boot Assessment
+  - TXE Secure Boot Assessment
+  - Intel Boot Guard Assessment
+  - U-Boot Hardening
+  - Boot Time Optimization Report
+  - Support Package and Workshop
+  - and many more
+* Through Training:
+  - https://paceenterprisetraining.com
+* Or just contact us: https://3mdeb.com/contact/#form
+
+---
+
 <center><img src="/img/0x1/zarhus_on_github.png" width="640px"></center>
 
 ### <center>https://github.com/zarhus</center> 
@@ -313,11 +388,9 @@ https://cfp.3mdeb.com/developers-vpub-0xd-2024/talk/QKJYGJ/
   * Currently space has 22 members.
 
 ---
-
 layout: cover
 background: /intro.png
 class: text-center
-
 ---
 
 # Questions?
@@ -328,11 +401,9 @@ Comment to satisfy pre-commit
 
 -->
 ---
-
 layout: cover
 background: /intro.png
 class: text-center
-
 ---
 
 # Backup
