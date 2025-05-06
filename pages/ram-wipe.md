@@ -117,7 +117,7 @@ layout: two-cols-header
 <b>Important note here:</b>
 <br>
 
-`ram-wipe` depends on boot-tume services
+`ram-wipe` depends on boot-time services
 
 </center>
 
@@ -143,7 +143,7 @@ layout: two-cols-header
 <b>Important note here:</b>
 <br>
 
-`ram-wipe` depends on shutdown/reboot/halt-tume services as well
+`ram-wipe` depends on shutdown/reboot/halt -time services as well
 
 </center>
 
@@ -168,11 +168,11 @@ layout: two-cols-header
 <b>Important notes here:</b>
 <br>
 
-`ram-wipe` uses Linux kernel command line parameters
+`ram-wipe` checks Linux kernel command line parameters
 
 `sdmem -l -l -v` is being used for wiping
 
-The `kexec` start the second stage
+The `kexec` starts the second stage
 
 </center>
 
@@ -199,7 +199,7 @@ layout: two-cols-header
 
 `ram-wipe` executes during second kernel boot up
 
-`ram-wipe` uses Linux kernel command line parameters
+`ram-wipe` checks Linux kernel command line parameters
 
 `sdmem -l -l -v` is being used for wiping
 
