@@ -50,7 +50,7 @@ Key points to make:
 
 <v-clicks>
 
-- Whats BMC/OpenBMC?
+- What's BMC/OpenBMC?
 - Current state of the upstream
 - Building x11ssh configuration
 - Demo
@@ -87,7 +87,7 @@ Key points to make:
 Key points to make:
 * BMC
   * Let's get up to speed on BMCs
-  * Came up with the definiton myself.
+  * Came up with the definition myself.
   * [DO THE ANALOGY TO TWO SYSTEMS ON A SINGLE MOTHERBOARD]
   * It's kinda ironic I quoted the definition from the ventor whose firmware
   we'll be replacing.
@@ -128,7 +128,7 @@ Key points to make:
 - Actively developed
 - [Public CI](https://jenkins.openbmc.org/job/ci-openbmc/) set up
     ![OpenBMC CI](/img/openbmc_ci.png)
-- *Claims* to support many platfroms already, including the X11SPI
+- _Claims_ to support many platforms already, including the X11SPI
 - Does it tho?
 - Honorable mention: Pionieers:
 [Hardened Vault](https://hardenedvault.net/blog/2024-03-15-openbmc-x11ssh-port/)
@@ -137,7 +137,7 @@ Key points to make:
 
 <!--
 Key points to make:
-* Only some of the targets/platfroms are being CI tested.
+* Only some of the targets/platforms are being CI tested.
 * The folks at OpenBMC have a different definition of "supported".
 If a platform is not regularly tested in CI, you can't be certain that it
 actually works, thus it's hard to call it supported.
@@ -150,6 +150,8 @@ figuring out console redirection was a breeze.
 ---
 
 ## Building X11SSH configuration
+
+<!-- markdownlint-disable MD013 -->
 
 <pre class="font-mono bg-black text-white rounded max-w-full max-h-[45vh] text-sm leading-none">
   <v-clicks>
@@ -186,11 +188,13 @@ figuring out console redirection was a breeze.
   </v-clicks>
 </pre>
 
+<!-- markdownlint-enable MD013 -->
+
 <!--
 Key points to make:
 * Attempted to build "supported" X11SPI configuration:
   * Had issues with running out of ram on 12th gen i7 system with 16G of RAM
-  * Created a docker container for reproducability and attempted to build on
+  * Created a docker container for reproducibility and attempted to build on
   "Builder"
   * Build was failing at one of final steps. The issue squashfs was too big to
   fit within declared flash memory size
@@ -209,7 +213,7 @@ Key points to make:
 * QEMU booting:
   * It was time to check if the image boots under QEMU
   * Flashing to the platform would be dumb at that moment
-  * QEMU has support for Aspeed familly boards, including AST2400 which the
+  * QEMU has support for Aspeed family boards, including AST2400 which the
   x11ssh platform uses.
   * That failed
 * bmcweb.service issue:
@@ -239,7 +243,7 @@ background: /intro.png
 class: text-center
 ---
 
-##  Demo
+## Demo
 
 ---
 
@@ -281,6 +285,10 @@ layout: cover
 
 ## Q&A
 
+<!-- markdownlint-disable MD013 -->
+
 <center>
   <img src="/img/zarhus_logo.png" width="300px" style="margin-left:-20px;filter: invert(1);">
 </center>
+
+<!-- markdownlint-enable MD013 -->

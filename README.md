@@ -23,7 +23,7 @@ npm audit fix
 npm run dev -- -p 8000 --remote --force
 ```
 
-- Open content in browser on http://0.0.0.0:8000
+* Open content in browser on <http://0.0.0.0:8000>
 
 * To export presentations in .pdf:
 
@@ -34,14 +34,14 @@ npx slidev export
 
 ## Contribution
 
-- Please feel free to create issues for improvement ideas and bugs, as well as
+* Please feel free to create issues for improvement ideas and bugs, as well as
   pull requests to fix any issues.
-- If you intend to provide code improvements, please install all dependencies
+* If you intend to provide code improvements, please install all dependencies
   by running:
 
   ```bash
   pip install -r requirements.txt
   ```
 
-- Before pushing code for review, ensure that `pre-commit run --all-files` does
+* Before pushing code for review, ensure that `pre-commit run --all-files` does
   not return any issues.
