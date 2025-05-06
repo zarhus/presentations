@@ -74,9 +74,14 @@ CPU.
 
 ---
 
-## Cache - important concepts
+<v-click at="+0">
+<center>
+  <img src="/img/cache.png" width="65%"/>
+  Generated via lstopo
+</center>
+</v-click>
 
-<v-clicks>
+<v-clicks at="+0">
 
 - cache level - there can be multiple caches e.g. L1/L2/L3
     + each next level is slower and bigger
@@ -88,13 +93,8 @@ CPU.
 
 </v-clicks>
 
-<v-click at="1">
-<center>
-  <img src="/img/cache.png" width="50%"/>
-</center>
-</v-click>
-
 <!--
+## Cache - important concepts
 - Usually lower leveled caches are per core while LLC is shared
 - For the best performance we want lowest ratio of cache misses
 - cache line - when data from memory is loaded into cache it's loading whole
@@ -115,13 +115,6 @@ Address is split in 3 parts
 - Index - cache set index
 - Offset - offset in cache line
 
-<!--
-There are 4 possible addressing schemes: different combinations of
-physical/virtual address for index and physical/virtual address for tag.
-Offset size depends on cache line size, index depends on number of sets in
-cache, tag is the rest of address.
--->
-
 <v-click>
 
 How cache addressing could look in Python
@@ -138,7 +131,20 @@ else
   print("cache miss")
 ```
 
+</v-click>
+
+::right::
+
+<center>
+  <img src="/img/cache-address-split.png"/>
+</center>
+
 <!--
+There are 4 possible addressing schemes: different combinations of
+physical/virtual address for index and physical/virtual address for tag.
+Offset size depends on cache line size, index depends on number of sets in
+cache, tag is the rest of address.
+
 Cache can be thought of as array containing m sets with each set containing n
 tuple/data pairs
 
@@ -150,17 +156,10 @@ into cache). Which tag/data pair will be replaced depends on replacement policy,
 it can be random, LRU or any other
 -->
 
-</v-click>
-
-::right::
-
-<center>
-  <img src="/img/cache-address-split.png"/>
-</center>
-
 ---
 
-Possible 4-way set-associative cache implementation
+Possible 4-way set-associative cache implementation<sup>Computer Organization
+and Design. 5th ed.</sup>
 
 <center>
   <img src="/img/cache-addressing.png" width="60%"/>
@@ -188,6 +187,7 @@ way contains additional bit to denote whether cache line is valid/dirty
 </v-clicks>
 
 <!--
+side-channel attack - attack based on extra information.
 Directly - e.g. CPU instructions, CLFLUSH on x86 to invalidate cache line,
 DC CIVAC for ARMv8
 Indirectly - exploiting how cache works e.g. accessing a lot of memory to load
@@ -199,10 +199,6 @@ Granularity - described attacks work with cache line or cache set granularity.
 ---
 
 ## Attack types
-
-<!--
-Below are 3 attack I focused on. There are many more.
--->
 
 - `Flush+Reload` - the easiest attack described here. It consists of 2 parts:
   <v-clicks>
@@ -231,6 +227,10 @@ Below are 3 attack I focused on. There are many more.
 
 </v-click>
 
+<!--
+Below are 3 attack I focused on. There are many more.
+-->
+
 ---
 
 - `Prime+Probe` - This attack doesn't require shared memory. It involves 2
@@ -238,7 +238,6 @@ Below are 3 attack I focused on. There are many more.
   <v-clicks>
 
     + `Prime` - fill cache lines with your own data
-  <!--        ^or cache sets.  ^i.e. make sure cache contains only your data -->
     + `Probe` - reload your data and time it. If it's cache hit then someone
     accessed memory that maps to this cache set.
 
@@ -264,11 +263,15 @@ Below are 3 attack I focused on. There are many more.
 - `Flush+Reload` & `Evict+Time` worked on X86
 - `Flush+Reload` on RPI4 failed due to less precise timing (too many false
   positives).
-  <!-- On X86 I could use counter register directly on RPI4 I had to use
-  perf interface. Test could probably be fine tuned -->
 - `Evict+Time` - Evicting cache lines used by victim resulted in function
   running around 150 units (likely CPU cycles) longer.
-  <!-- function runtime varies by around 40 units so it was very visible jump -->
+
+<!--
+'Flush+Reload' - On X86 I could use counter register directly on RPI4 I had to
+use perf interface. Test could probably be fine tuned
+'Evict+Time' - Function runtime varies by around 40 units so it was very visible
+jump
+-->
 
 ---
 
@@ -279,6 +282,7 @@ implementation in the CROSSCON hypervisor prevents inter-VM cache attacks.
 
 <center>
   <img src="/img/cache-coloring.png" width="70%"/>
+  D2.3 CROSSCON Open Specification
 </center>
 
 <!--In short it's cache partitioning scheme where each VM can only use it's own
@@ -292,6 +296,7 @@ Attacks requiring shared memory will use CROSSCON hypervisor shared memory
 
 <center>
   <img src="/img/shared-mem.png" width="70%"/>
+  D2.3 CROSSCON Open Specification
 </center>
 
 And `ipcshmem` driver
@@ -322,65 +327,29 @@ difference when evicting used cache lines (and no difference when evicting other
 non-used shared memory)
 
 ---
-layout: two-cols-header
+layout: center
 ---
 
-# Evict+Time test on 1 VM
+# Evict+Time test on 2 VMs
 
 <!--
-Maybe this should be demo if we won't manage to run 2 VMs before
-presentation. Or if we don't need to show CROSSCON demo then version with shared
-library on X86.
+Demo:
+- Boot CROSSCON with 2 VMS.
+- Run 'cache_test time 0' in VM 1
+- Run 'cache_test evict 0' in VM 2
+- We can clearly see jump of around 140 units when we are evicting memory that
+victim is using
+- Run 'cache_test evict 1' in VM 2 to show that evicting different cache line
+doesn't change timing.
+
+Median time is calculated from last _n_ samples (in this case 500)
 -->
-
-As of now test was only verified on 1 VM as we don't have 2 VM config on RPI4.
-Median time is calculated from last _n_ samples (in this case 500) and varies by
-around 40 units.
-
-::left::
-
-<div style="padding:0 40px 0 0;margin: -100px 0 0 0">
-
-Function execution time difference when evicting used (0th) cache line
-
-```text {all|7}
-$ cache_test time 0 & sleep 2 && cache_test evict 0
-Opening /dev/crossconhypipc0
-mmaping /dev/crossconhypipc0
-Libflush init
-Calculating median baseline. Don't evict.
-Calculated median time: 498
-Median time diff from baseline:  170
-```
-
-</div>
-
-::right::
-
-<div style="padding:0 40px 0 0;margin: -100px 0 0 0">
-
-Function execution time difference when evicting unused (1st) cache line
-
-```text {all|7}{at:'1'}
-$ cache_test time 0 & sleep 2 && cache_test evict 1
-Opening /dev/crossconhypipc0
-mmaping /dev/crossconhypipc0
-Libflush init
-Calculating median baseline. Don't evict.
-Calculated median time: 482
-Median time diff from baseline:  34
-```
-
-</div>
-
-<!--We can clearly see jump of around 140 units when we are evicting memory that
-victim is using -->
 
 ---
 
 ## Next steps
 
-- Run this test on 2 VMs and draw conclusions
+- Enable cache coloring and test it
 - Add another test that checks cache coloring for non-shared memory
 
 ---
