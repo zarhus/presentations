@@ -65,11 +65,12 @@ What is the `ram-wipe`?
 
 </center>
 
-* Is the Kicksecure's solution (www.kicksecure.com)
-* Is a fully software solution based on Linux executables, shell scripts, dracut and its modules
-* Is open source: `github.com/kicksecure/ram-wipe`
-* Is under AGPL-3+ license
-* Is in testing stage
+- Is the Kicksecure's solution (<www.kicksecure.com>)
+- Is a fully software solution based on Linux executables, shell scripts, dracut
+  and its modules
+- Is open source: `github.com/kicksecure/ram-wipe`
+- Is under AGPL-3+ license
+- Is in testing stage
 
 <center>
 
@@ -223,8 +224,8 @@ layout: two-cols-header
 ::right::
 
 <b>The test cases:</b>
-* Checking what memory are being wiped
-* Trying to dump LUKS keys
+- Checking what memory are being wiped
+- Trying to dump LUKS keys
 
 <br>
 
@@ -241,18 +242,21 @@ layout: two-cols-header
 ## `ram-wipe`: testing results
 
 Warm boot attacks:
-* <b>Not zeroed</b> priviliged memory: Linux kernel and GRUB address spaces
-* <b>Not zeroed</b> unpriviliged momery: currently executed proccesses address space
-* Zeroed: memory not used by processes or system code
-* LUKS keys were not dumped
+- <b>Not zeroed</b> privileged memory: Linux kernel and GRUB address spaces
+- <b>Not zeroed</b> unprivileged memory: currently executed processes address
+  space
+- Zeroed: memory not used by processes or system code
+- LUKS keys were not dumped
 
 Cold boot attacks:
-* Memory <b>was not</b> zeroed completely
-* LUKS keys <b>were dumped</b>
+- Memory <b>was not</b> zeroed completely
+- LUKS keys <b>were dumped</b>
 
 <center>
 
-More results and detailed step-by-step explanation on 3mdeb's (www.linkedin.com/company/3mdeb) and my (www.linkedin.com/in/daniil-klimuk-9358a1271) Linkedin pages soon!
+More results and detailed step-by-step explanation on 3mdeb's
+(<www.linkedin.com/company/3mdeb>) and my
+(<www.linkedin.com/in/daniil-klimuk-9358a1271>) Linkedin pages soon!
 
 </center>
 
@@ -261,8 +265,10 @@ More results and detailed step-by-step explanation on 3mdeb's (www.linkedin.com/
 ## Conclusions
 
 Warm boot attacks:
-* `ram-wipe` cannot wipe RAM used by kernel, because it is an application that is not allowed to modify Linux kernel address space.
-* `ram-wipe` wipes memory previously used by processes, but it cannot wipe RAM of currently executed processes.
+- `ram-wipe` cannot wipe RAM used by kernel, because it is an application that
+  is not allowed to modify Linux kernel address space.
+- `ram-wipe` wipes memory previously used by processes, but it cannot wipe RAM
+  of currently executed processes.
 
 <center>
 
@@ -274,7 +280,8 @@ Cold boot attacks:
 
 <center>
 
-The problem: <b>the entire solution relies on software execution flow that is being interrupted during cold attacks!</b>
+The problem: <b>the entire solution relies on software execution flow that is
+being interrupted during cold attacks!</b>
 
 </center>
 
