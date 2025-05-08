@@ -65,12 +65,12 @@ What is the `ram-wipe`?
 
 </center>
 
-- Is the Kicksecure's solution (<www.kicksecure.com>)
-- Is a fully software solution based on Linux executables, shell scripts, dracut
-  and its modules
-- Is open source: `github.com/kicksecure/ram-wipe`
-- Is under AGPL-3+ license
-- Is in testing stage
+- It is the Kicksecure's solution (<www.kicksecure.com>)
+- It is a fully software solution based on Linux executables, shell scripts,
+  dracut and its modules
+- It is open source: `github.com/kicksecure/ram-wipe`
+- It is shared under AGPL-3+ license
+- It is in testing stage
 
 <center>
 
@@ -224,7 +224,7 @@ layout: two-cols-header
 ::right::
 
 <b>The test cases:</b>
-- Checking what memory are being wiped
+- Checking what memory regions are being wiped
 - Trying to dump LUKS keys
 
 <br>
@@ -242,10 +242,10 @@ layout: two-cols-header
 ## `ram-wipe`: testing results
 
 Warm boot attacks:
-- <b>Not zeroed</b> privileged memory: Linux kernel and GRUB address spaces
-- <b>Not zeroed</b> unprivileged memory: currently executed processes address
+- Privileged memory <b>is not zeroed</b>: Linux kernel and GRUB address spaces
+- Unprivileged memory <b>is not zeroed</b>: currently executed processes address
   space
-- Zeroed: memory not used by processes or system code
+- Memory not used by processes or system code was zeroed
 - LUKS keys were not dumped
 
 Cold boot attacks:

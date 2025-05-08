@@ -19,5 +19,5 @@ mdc: true
 ## Zarhus Developer Meetup
 
 ---
-src: ./pages/ram-wipe.md
+src:
 ---
