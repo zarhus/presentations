@@ -1,0 +1,3 @@
+[submodule "slidev-template"]
+	path = slidev-template
+	url = https://github.com/3mdeb/slidev-template.git

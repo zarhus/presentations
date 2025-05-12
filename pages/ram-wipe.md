@@ -1,4 +1,5 @@
 ---
+theme: ../slidev-template/theme
 layout: cover
 background: /intro.png
 class: text-center
@@ -7,7 +8,7 @@ class: text-center
 ## Kicksecure's ram-wipe against RAM attacks
 
 <center>
-    <img src="/img/zarhus_logo.png" width="150px"
+    <img src="/../img/zarhus_logo.png" width="150px"
          style="margin-left:-20px;filter: invert(1);">
 </center>
 
@@ -23,7 +24,7 @@ layout: two-cols-header
 
 <br>
 
-<img src="/img/daniil.klimuk.webp" width="45%" />
+<img src="/../img/daniil.klimuk.webp" width="45%" />
 
 **Daniil Klimuk**
 
@@ -36,7 +37,7 @@ _Zarhus team leader, embedded and Linux enthusiast_
 ::right::
 
 <div class="flex justify-center items-center">
-  <img src="/img/zarhus_logo.png" height="220px" />
+  <img src="/../img/zarhus_logo.png" height="220px" />
 </div>
 
 ---
@@ -82,7 +83,7 @@ The goal: <b> to protect from cold boot attacks </b>
 
 ::right::
 
-<center><img src="/img/ram-wipe-logo.svg" width="80%" /></center>
+<center><img src="/../img/ram-wipe-logo.svg" width="80%" /></center>
 
 <br>
 <br>
@@ -91,7 +92,7 @@ The goal: <b> to protect from cold boot attacks </b>
 
 ## RAM attacks: warm boot attack vs cold boot attack
 
-<center><img src="/img/warm-vs-cold-boot-attack.svg" width="65%" /></center>
+<center><img src="/../img/warm-vs-cold-boot-attack.svg" width="65%" /></center>
 
 <br>
 <center>The key difference: malware boot process.</center>
@@ -104,7 +105,7 @@ layout: two-cols-header
 
 ::left::
 
-<center><img src="/img/ram-wipe-flowchart-1.svg" width="70%" /></center>
+<center><img src="/../img/ram-wipe-flowchart-1.svg" width="70%" /></center>
 
 ::right::
 
@@ -130,7 +131,7 @@ layout: two-cols-header
 
 ::left::
 
-<center><img src="/img/ram-wipe-flowchart-2.svg" width="80%" /></center>
+<center><img src="/../img/ram-wipe-flowchart-2.svg" width="80%" /></center>
 
 ::right::
 
@@ -156,7 +157,7 @@ layout: two-cols-header
 
 ::left::
 
-<center><img src="/img/ram-wipe-flowchart-3.svg" width="90%" /></center>
+<center><img src="/../img/ram-wipe-flowchart-3.svg" width="90%" /></center>
 
 ::right::
 
@@ -185,7 +186,7 @@ layout: two-cols-header
 
 ::left::
 
-<center><img src="/img/ram-wipe-flowchart-4.svg" width="60%" /></center>
+<center><img src="/../img/ram-wipe-flowchart-4.svg" width="60%" /></center>
 
 ::right::
 
@@ -214,7 +215,7 @@ layout: two-cols-header
 
 ::left::
 
-<center><img src="/img/ram-wipe-testing-env.svg" width="90%" /></center>
+<center><img src="/../img/ram-wipe-testing-env.svg" width="90%" /></center>
 
 <br>
 <br>
@@ -294,5 +295,5 @@ class: text-center
 ## Q&A
 
 <center>
-  <img src="/img/zarhus_logo.png" width="150px" style="margin-left:-20px">
+  <img src="/../img/zarhus_logo.png" width="150px" style="margin-left:-20px">
 </center>
