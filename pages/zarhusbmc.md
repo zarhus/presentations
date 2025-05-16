@@ -1,4 +1,5 @@
 ---
+theme: ../slidev-template/theme
 layout: cover
 background: /intro.png
 class: text-center
@@ -7,7 +8,7 @@ class: text-center
 ## ZarhusBMC: The Beginning - Porting OpenBMC to the X11SSH Platform
 
 <center>
-    <img src="/img/zarhus_logo.png" width="150px"
+    <img src="/../img/zarhus_logo.png" width="150px"
          style="margin-left:-20px;filter: invert(1);">
 </center>
 
@@ -33,7 +34,7 @@ _Member of the **Zarhus** team_
 </div>
 
 <div class="flex justify-center items-center">
-  <img src="/img/zarhus_logo.png" height="220px" style="filter: invert(1)"/>
+  <img src="/../img/zarhus_logo.png" height="220px" style="filter: invert(1)"/>
 </div>
 
 </div>
@@ -127,7 +128,7 @@ Key points to make:
 - Last release `2.14.0` dated at 16/05/2023 (almost 2 years ago)
 - Actively developed
 - [Public CI](https://jenkins.openbmc.org/job/ci-openbmc/) set up
-    ![OpenBMC CI](/img/openbmc_ci.png)
+    ![OpenBMC CI](/../img/openbmc_ci.png)
 - _Claims_ to support many platforms already, including the X11SPI
 - Does it tho?
 - Honorable mention: Pionieers:
@@ -288,7 +289,7 @@ layout: cover
 <!-- markdownlint-disable MD013 -->
 
 <center>
-  <img src="/img/zarhus_logo.png" width="300px" style="margin-left:-20px;filter: invert(1);">
+  <img src="/../img/zarhus_logo.png" width="300px" style="margin-left:-20px;filter: invert(1);">
 </center>
 
 <!-- markdownlint-enable MD013 -->

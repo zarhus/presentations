@@ -1,4 +1,5 @@
 ---
+theme: ../slidev-template/theme
 layout: cover
 background: /intro.png
 class: text-center
@@ -7,7 +8,7 @@ class: text-center
 ## Zarhus with rootfs on CROSSCON Hypervisor
 
 <center>
-    <img src="/img/zarhus_logo.png" width="150px"
+    <img src="/../img/zarhus_logo.png" width="150px"
          style="margin-left:-20px;filter: invert(1);">
 </center>
 
@@ -31,7 +32,7 @@ _member of the **Zarhus** team_
 </div>
 
 <div class="flex justify-center items-center">
-  <img src="/img/zarhus_logo.png" height="220px" style="filter: invert(1)"/>
+  <img src="/../img/zarhus_logo.png" height="220px" style="filter: invert(1)"/>
 </div>
 
 </div>
@@ -78,7 +79,7 @@ layout: two-cols-header
 
 ## CROSSCON Hypervisor Recap
 
-<center><img src="/img/crosscon-logo-2.png" width="200px"></center>
+<center><img src="/../img/crosscon-logo-2.png" width="200px"></center>
 
 <v-clicks>
 
@@ -136,7 +137,7 @@ for security tests a lot more tedious than it needs to be
 <!-- markdownlint-disable MD013 -->
 
 <span style="display: block; height: 2rem;"></span>
-<center><img src="/img/diagram-crosscon-hv-setup.png" width="450px" style="filter: invert(1);"></center>
+<center><img src="/../img/diagram-crosscon-hv-setup.png" width="450px" style="filter: invert(1);"></center>
 
 <!-- markdownlint-enable MD013 -->
 
@@ -173,8 +174,8 @@ Full guide [in the Zarhus docs](https://docs.zarhus.com/guides/rpi4-crosscon-hyp
 <!-- markdownlint-disable MD013 -->
 
 <center>
-  <img src="/img/zarhus_logo.png" width="200" style="filter: invert(1); margin-bottom: 20px;" />
-  <img src="/img/yocto-logo.png" width="200" style="filter: invert(1);" />
+  <img src="/../img/zarhus_logo.png" width="200" style="filter: invert(1); margin-bottom: 20px;" />
+  <img src="/../img/yocto-logo.png" width="200" style="filter: invert(1);" />
 </center>
 
 <!-- markdownlint-enable MD013 -->
@@ -314,7 +315,7 @@ Social media links:
 <!-- markdownlint-disable MD013 -->
 
 <center>
-  <img src="/img/zarhus_logo.png" width="230px" style="margin-left:-20px;filter: invert(1);">
+  <img src="/../img/zarhus_logo.png" width="230px" style="margin-left:-20px;filter: invert(1);">
 </center>
 
 <!-- markdownlint-enable MD013 -->

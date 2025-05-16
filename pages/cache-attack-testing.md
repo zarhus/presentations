@@ -1,4 +1,5 @@
 ---
+theme: ../slidev-template/theme
 layout: cover
 background: /intro.png
 class: text-center
@@ -7,7 +8,7 @@ class: text-center
 ## Cache timing attacks: How do they work?
 
 <center>
-    <img src="/img/zarhus_logo.png" width="150px"
+    <img src="/../img/zarhus_logo.png" width="150px"
          style="margin-left:-20px;filter: invert(1);">
 </center>
 
@@ -29,7 +30,7 @@ _Junior Embedded Systems Engineer_
 </div>
 
 <div class="flex justify-center items-center">
-  <img src="/img/zarhus_logo.png" height="220px" />
+  <img src="/../img/zarhus_logo.png" height="220px" />
 </div>
 
 </div>
@@ -76,7 +77,7 @@ CPU.
 
 <v-click at="+0">
 <center>
-  <img src="/img/cache.png" width="65%"/>
+  <img src="/../img/cache.png" width="65%"/>
   Generated via lstopo
 </center>
 </v-click>
@@ -136,7 +137,7 @@ else
 ::right::
 
 <center>
-  <img src="/img/cache-address-split.png"/>
+  <img src="/../img/cache-address-split.png"/>
 </center>
 
 <!--
@@ -162,7 +163,7 @@ Possible 4-way set-associative cache implementation<sup>Computer Organization
 and Design. 5th ed.</sup>
 
 <center>
-  <img src="/img/cache-addressing.png" width="60%"/>
+  <img src="/../img/cache-addressing.png" width="60%"/>
 </center>
 
 <!--
@@ -281,7 +282,7 @@ Main goal of those tests will be verifying whether the cache coloring
 implementation in the CROSSCON hypervisor prevents inter-VM cache attacks.
 
 <center>
-  <img src="/img/cache-coloring.png" width="70%"/>
+  <img src="/../img/cache-coloring.png" width="70%"/>
   D2.3 CROSSCON Open Specification
 </center>
 
@@ -295,7 +296,7 @@ part of cache -->
 Attacks requiring shared memory will use CROSSCON hypervisor shared memory
 
 <center>
-  <img src="/img/shared-mem.png" width="70%"/>
+  <img src="/../img/shared-mem.png" width="70%"/>
   D2.3 CROSSCON Open Specification
 </center>
 
@@ -374,5 +375,5 @@ layout: cover
 ## Q&A
 
 <center>
-  <img src="/img/zarhus_logo.png" width="150px" style="margin-left:-20px">
+  <img src="/../img/zarhus_logo.png" width="150px" style="margin-left:-20px">
 </center>

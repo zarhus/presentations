@@ -2,35 +2,27 @@
 
 This repository contains presentations for Zarhus Developer Meetups.
 
+## Installation
+
+1. Install the `slidev-template` submodule:
+    `git submodule update --init --remote slidev-template`
+
+2. Go to the submodule directory:
+    `cd slidev-template`
+
 ## Usage
 
-* Install npm manager e.g. [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script)
-* Use lts version of npm:
+### Start presentation
 
-```bash
-npm install --lts
-```
+1. Start the desired presentation:
+    `./scripts/local-preview.sh ../pages/ram-wipe.md`
 
-* Fix vulnerabilities if found during install:
+2. Open content in browser on <http://127.0.0.1:8000>
 
-```bash
-npm audit fix
-```
+### Export presentation
 
-* Host presentations:
-
-```bash
-npm run dev -- -p 8000 --remote --force
-```
-
-* Open content in browser on <http://0.0.0.0:8000>
-
-* To export presentations in .pdf:
-
-```bash
-npm i -D playwright-chromium
-npx slidev export
-```
+1. Start the desired presentation:
+    `./scripts/generate-pdf.sh ../pages/ram-wipe.md`
 
 ## Contribution
 
