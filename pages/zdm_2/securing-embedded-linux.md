@@ -5,7 +5,7 @@ background: /intro.png
 class: text-center
 ---
 
-## Cache timing attacks: How do they work?
+## Securing embedded Linux: Secure Boot, encryption and A/B updates with Yocto
 
 <center>
     <img src="/../img/zarhus_logo.png" width="150px"
