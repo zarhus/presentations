@@ -305,6 +305,19 @@ layout: two-cols-header
 <center><img src="/../img/zdm_2/dts_roadmap_v0.1.png" width="650"></center>
 
 ---
+layout: two-cols-header
+---
+
+## Future plans
+
+* PC Engines APU (UEFI)
+  - Support next release
+* Build reproducibility
+  - https://github.com/Dasharo/dasharo-issues/issues/957
+* UI library separation
+  - Also other UI improvements and considerations
+
+---
 layout: cover
 background: /intro.png
 class: text-center
