@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTS Timeline</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+        }
+
+        .timeline-container {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .timeline {
+            position: relative;
+            height: 80px;
+            margin: 20px 0;
+        }
+
+        .timeline-line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #3498db 0%, #3498db 25%, #2ecc71 25%, #2ecc71 75%, #f39c12 75%, #f39c12 100%);
+            transform: translateY(-50%);
+        }
+
+        .timeline-point {
+            position: absolute;
+            top: 50%;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 3px solid white;
+            transform: translateY(-50%);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .point-1 {
+            left: 0;
+            background: #3498db;
+            transform: translate(-50%, -50%);
+        }
+
+        .point-2 {
+            left: 50%;
+            background: #2ecc71;
+            transform: translate(-50%, -50%);
+        }
+
+        .point-3 {
+            right: 0;
+            background: #f39c12;
+            transform: translate(50%, -50%);
+        }
+
+        .timeline-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .label {
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .label-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+
+        .label-date {
+            color: #7f8c8d;
+            font-size: 12px;
+        }
+
+        .label-1 .label-title { color: #3498db; }
+        .label-2 .label-title { color: #2ecc71; }
+        .label-3 .label-title { color: #f39c12; }
+    </style>
+</head>
+<body>
+    <div class="timeline-container">
+        <div class="timeline">
+            <div class="timeline-line"></div>
+            <div class="timeline-point point-1"></div>
+            <div class="timeline-point point-2"></div>
+            <div class="timeline-point point-3"></div>
+        </div>
+        
+        <div class="timeline-labels">
+            <div class="label label-1">
+                <div class="label-title">Last DTS Status</div>
+                <div class="label-date">DUG#8 - Dec 2024</div>
+            </div>
+            <div class="label label-2">
+                <div class="label-title">Status Report</div>
+                <div class="label-date">Q1-Q3 2025</div>
+            </div>
+            <div class="label label-3">
+                <div class="label-title">Future Plans</div>
+                <div class="label-date">Q3-Q4 2025</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
