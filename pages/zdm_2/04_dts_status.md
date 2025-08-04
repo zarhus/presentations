@@ -131,7 +131,7 @@ Issues statistics retrieved by script from dasharo/presentations repo:
 layout: two-cols-header
 ---
 
-## Statistics - dasharo-scripts PRs
+## Statistics - dts-scripts PRs
 
 <center><img src="/../img/zdm_2/dasharo_prs_dts_scripts.png" width="650"></center>
 
