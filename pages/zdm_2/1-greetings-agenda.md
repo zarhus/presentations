@@ -93,14 +93,9 @@ If no questions I will try to spin off some discussion and gather some ideas.
 
 ---
 
+* Zarhus Family/derivatives
 * Dasharo Tools Suite in press and popularity
 * Zarhus Business Model
-* Zarhus Family/derivatives
-  - Dasharo Tools Suite
-  - RTE OS
-  - ProvisioningBox
-  - ZarhusBMC
-  - ZarhusWRT
 
 
 <!--
@@ -112,173 +107,203 @@ upcoming months.
 -->
 
 ---
+clicks: 5
+---
+
+<center><img src="/../img/zdm_2/zarhus_family.excalidraw.png" width="550px"></center>
+
+<!--
+
+[click]
+
+Dasharo Tools Suite (DTS) is a set of tools running in a minimal Linux
+environment to deploy, update, and maintain firmware on Dasharo-supported
+devices. For example, it can be used to update the firmware on a device or run
+the initial deployment, even when no OS is currently installed.
+
+[click]
+
+Remote Testing Environment is a hat designed for Orange Pi Zero board which
+runs specially crafted Linux distribution using the Yocto Project it is called
+RTE OS and is part of Zarhus OS family.
+
+We developed RTE to enable programmers from around the world in low level
+firmware development without hassle of heavy KVM switch interface. As a result
+we have a tool which makes firmware debugging tasks easy.
+
+[click]
+
+ProvisioningBox (PBOX) OS  - this is specially crafted reasonably secure and
+trustworthy embedded operating system with goal to be run in VM or on hardware
+(Odroid-H4+ supported) which simplify Root of Trust and Chain of Trust
+provisioning as well as provide CI-in-the-box for selfhosted, airgapped system
+that can build firmware for enterprise internal depoloyments. It aims to, if
+not solve, to at least mitiage issues of key mismanagment and support firmware
+developers in building and signing firmware artifacts as well as mke those
+ready for modern RoT and CoT technologies.
+
+[click]
+
+ZarhusBMC - incarnation of Zarhus OS dedicated to BMCs, it consist of set of
+tools accelerating OpenBMC porting to proprietary hardware, through set of
+tooling it aims to produce skeleton for OpenBMC autoport. With sepcial focus on
+Root of Trust and Chain of Trust of BMC, as all Zarhus OS derviatives.
+
+[click]
+
+ZarhusWRT - the same concept but aim for OpenWRT ecosytem of wireless routers.
+With aim of target wireless routers and support provionsing and maitaining RoT
+and CoT for those chipsetes.
+
+-->
+
+---
 
 <center><img src="/../img/zdm_2/dts_release_downloads.png" width="950px"></center>
 
 <!--
 
 Full status will be on Maciej presentation, but I would like to drop some
-numbers, which are not there.
+numbers and news, which are not there AFAIK
+
+Obviously it does no contain other statics like direct downloads from
+boot.3mdeb.com
 
 -->
 
 ---
 
-# Releases
+<center><img src="/../img/zdm_2/dts_press01.png" width="850px"></center>
 
-* Our goal is to publish as many release as possible to gather intrest of
-relevant communities.
-
----
-
-<center><img src="/../img/0x1/zarhus_in_ecosystem.png" width="750px"></center>
+[https://www.linuxtechmore.com/dasharo-firmware-1-0-0-novacustom-linux-laptops](https://www.linuxtechmore.com/dasharo-firmware-1-0-0-novacustom-linux-laptops)
 
 ---
 
-<center><img src="/../img/0x1/zarhus-dasharo-relation.png" width="650px"></center>
+<center><img src="/../img/zdm_2/dts_press02.png" width="950px"></center>
+
+[https://www.osnews.com/story/142758/review-the-novacustom-v54-is-an-outstanding-linux-laptop-with-dasharo-coreboot-firmware/](https://www.osnews.com/story/142758/review-the-novacustom-v54-is-an-outstanding-linux-laptop-with-dasharo-coreboot-firmware/)
+
+---
+
+<center><img src="/../img/zdm_2/fum.png" width="650px"></center>
 
 <!--
 
-What is relation to Dasharo
+DTS is part of FUM
 
 -->
 
 ---
 
-<center><img src="/../img/0x1/zarhus_value_prop.svg" width="750px"></center>
+<center><img src="/../img/zdm_2/rte_release_downloads.png" width="900px"></center>
+
+---
+
+# What all that means?
+
+* "Release early. Release often. And listen to your customers.", Eric S. Raymonds <i>Cathedral and the Bazaar</i>
+* Our goal is to publish as many release as possible, assuming similar quality
+we have now, to gather interest of relevant communities.
+* Testing have to be automated by design.
+* We have to rely more on metadata configurable by user than on hard-coded
+values.
+* Releases have to be made in tiers:
+  - LTS - once a year
+  - Scoped - release made on top of LTS, with testing limited to added
+    functionality,
+  - Nightly - only smoke tests executed,
+* Average number of releases
+  - DTS: 3.34 release/quarter
+  - RTE: 0.29 release/quarter (once in 11 months)
+
+---
+
+# ProvisioningBox Vision
+
+* It can run as VM or on bare metal - for VM security is on hosting provider
+* Air-Gapped CI which can build open-source firmware like Dasharo, but also
+ZarhusBMC, ZarhusWRT and other Zarhus derivative.
+* It manage keys for firmware security features provisioning
+* It can provision Root of Trust like Intel Boot Guard, Rockchip Secure Boot,
+NXP High Assurance Boot etc.
+* It can provision Chain of Trust technologies like UEFI Secure Boot including
+signing drivers, OS loaders and applications.
+* It can deliver security packages building e.g. TrenchBoot components.
+* It support Nitrokey HSM.
+* On bare-metal it can self-provision itself.
 
 <!--
 
-What is value proposition?
+EU CRA/NIS2/ISO27001 compliance support.
 
 -->
 
 ---
 
-<center><img src="/../img/0x1/zarhus_supported_hw.svg" width="750px"></center>
+# ZarhusBMC Vision
+
+* Assessment tooling included
+* Autoport, scaffolding, skeleton building scripts included
+  - Acceleration of Yocto/OpenBMC porting/enabling
+* Modern BMCs (AST2500, AST2600, AST2700) for AMD and Intel servers
+* Open Source Firmware Validation support
+* Synergy with Dasharo host CPU firmware
+* Business model similar to Dasharo
 
 <!--
 
-What hardware vendors we are working with?
-
--->
-
----
-zoom: 0.9
----
-
-# How community can use it?
-
-* Prerequisites:
-  * At least basic Yocto understanding is required
-  * Understanding of kas (setup tool for bitbake based projects) is recommended
-* Keep checking progress on:
-  - https://docs.zarhus.com/
-  - https://github.com/zarhus
-    - we create roadmap under `zarhus-issues` and will track our progress there
-    - we will inform you during DUGs
-* Currently most repositories are still in 3mdeb organization (32) in private gitlab (37)
-  - https://github.com/3mdeb - search for `meta` keyword
-  - most of the code is MIT-licensed
-* In total it is 87k lines of code of 17k we already contributed upstream.
-* Meanwhile for direct business needs we designed, developed and delivered over
-  400k lines of code.
-  - With Zarhus we want to change this proportions.
-
----
-zoom: 0.9
----
-
-# How to buy it?
-
-* Indirectly through Dasharo Entry Subscription or obtaining RTE (limited to
-  product needs):
-  - https://shop.3mdeb.com/product-category/dasharo-entry-subscription/
-  - https://shop.3mdeb.com/shop/open-source-hardware/rte/
-* Through productised services: https://shop.3mdeb.com/product-category/services/
-  - Secure Boot integration for NXP and Rockchip
-  - TPM and UEFI Secure Boot Assessment
-  - TXE Secure Boot Assessment
-  - Intel Boot Guard Assessment
-  - U-Boot Hardening
-  - Boot Time Optimization Report
-  - Support Package and Workshop
-  - and many more
-* Through Training:
-  - https://paceenterprisetraining.com
-* Or just contact us: https://3mdeb.com/contact/#form
-
----
-
-<center><img src="/../img/0x1/zarhus_on_github.png" width="640px"></center>
-
-### <center>https://github.com/zarhus</center> 
-
-<!--
-
-# Slowly building our presence and activity on Github.
+ZarhusWRT very similar vision, but it is too early for it.
 
 -->
 
 ---
 
-<center><img src="/../img/0x1/meta-dts-12m.png" width="850px"></center>
+# Pace Enterprise Training (PET)
 
-<center>
-
-https://github.com/Dasharo/meta-dts
-
-</center>
-
----
-
-<center><img src="/../img/0x1/meta-rte-12m.png" width="850px"></center>
-
-<center>
-
-https://github.com/3mdeb/meta-rte
-
-</center>
+* Both PET and OST2 courses have its own needs for OS.
+* Those OSes can be general purpose as well as very dedicated.
+* Courses are executed in three environments:
+  - OST2 VM for training environment isolation - Ubuntu 24.04 with customizations.
+  - Emulated or simulated environment QEMU/Simics - currently Alpine Linux with
+    semi-automated script installing packages.
+  - Target hardware OS - Ubuntu 24.04 deployed using autoinstall and further
+    customized through sync scripts.
+  - DTS - as live distro.
+* PET/OST2 ecosystem could benefit from consistent OS management, especially when connected with minimalism (resource saving) and customizability through metadata.
 
 ---
 
-<center><img src="/../img/0x1/dts_status_on_dug8.png" width="650px"></center>
+<center><img src="/../img/zdm_2/zarhus_business_model.png" width="950px"></center>
 
-<center>
+<br>
 
-https://cfp.3mdeb.com/developers-vpub-0xd-2024/talk/QKJYGJ/
-
-</center>
+* All DTS, RTE OS release are ZCR
+* ProvisioningBox OS will be ZEPR (<i>Zarhus Enterprise Package Release</i>)
+with optional revenue sharing through reselling.
+  - Most likely one release in a year for ZEPR customers.
+* Initial ZarhusBMC most likely would be ZCR with some ideas to transition to
+ZPPR/ZEPR.
+* Zarhus OS (e.g. ZarhusWRT) for dedicated customers falls in ZSP.
 
 ---
 
 # Zarhus Team Events Roadmap
 
 * Preliminary dates for future Zarhus Developers Meetups
-  - ZDM 0x2: **5th August 2025**
-  - ZDM 0x3: **4th November 2025**
-
----
-
-# Upcoming
-
-* ZarhusBMC.
-* OpenWRT for x86.
-* Secure Boot for other Rockchip based platforms.
-* ML for embedded systems.
-* Boot time optimization for Slimbootloader bootstrapped industrial hardware.
-* Work on GPU and crypto.
-* Improve contribution to embedded Linux related projects `17065 insertions(+), 661 deletions(-)`
+  - ZDM#3: **4th November 2025**
+  - ZDM#4: **10th February 2026**
 
 ---
 
 # Community
 
-* Github has only activity from Zarhus Team.
+* Github still has only activity from Zarhus Team.
+  - 14 followers.
+  - ZarhusBMC has 8 stars, thanks to Mateusz Discussion idea and hype it created.
 * On Matrix we have our small community.
   * https://matrix.to/#/#zarhus:matrix.3mdeb.com
   * Three rooms: General, Support and Random
-  * Currently space has 22 members.
+  * Currently space has 28 (+6) members.
 
 ---
 layout: cover
@@ -291,35 +316,5 @@ class: text-center
 <!--
 
 Comment to satisfy pre-commit
-
--->
----
-layout: cover
-background: /intro.png
-class: text-center
----
-
-# Backup
-
-<!--
-
-# Inevitable side-effect
-
-* Multimedia, quality of life and UX features like fast logo display,
-animations during boot-up or hardware video decoding, which are common in
-consumer devices like Android phones require more work than usual.
-
-- **Why?**  
-  Our main priority is security and long-term maintainability over cosmetic or typical user features.  
-  We use official, well-maintained software (upstream kernels, bootloaders, and security environments) instead of code provided by hardware vendors that might be less secure or harder to keep updated.
-
-- **How does this cause the limitation?**  
-  By not using vendor-specific short-cuts or binary blobs (which might enable early graphics), we don’t get early access to graphics hardware. This means users may see a basic boot process instead of a polished animation until Linux is running.
-
-- **Can this be improved?**  
-  Yes, but it would take major effort and cost—as it would require serious boot-time optimization and possibly some compromise on our core values for security and maintainability.
-
-- **What’s next?**  
-  We prefer focusing on our original agreement (static images, secure, maintainable system). If you need these extra features, we can discuss them as new projects or support packages in the future.
 
 -->
