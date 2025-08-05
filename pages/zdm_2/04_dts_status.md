@@ -319,6 +319,22 @@ layout: two-cols-header
   - Also other UI improvements and considerations
 
 ---
+layout: two-cols-header
+---
+
+## How to get involved?
+
+* DTS documentation
+  - https://docs.dasharo.com/dasharo-tools-suite/documentation/building/
+* Bug bounty
+  - https://github.com/Dasharo/dasharo-issues
+  - `DasharoToolsSuite` label
+
+<br>
+
+<center><img src="/../img/zdm_2/dts_bug_bounty.png" width="350"></center>
+
+---
 layout: cover
 background: /intro.png
 class: text-center
