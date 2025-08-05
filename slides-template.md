@@ -2,7 +2,7 @@
 theme: ./theme
 background: /intro.png
 # some information about your slides (markdown enabled)
-title: Zarhus Developer Meetup
+title: Zarhus Developers Meetup
 info: false
 # apply unocss classes to the current slide
 class: text-center
@@ -15,7 +15,7 @@ transition: slide-left
 mdc: true
 ---
 
-## Zarhus Developer Meetup
+## Zarhus Developers Meetup
 
 ---
 src: <SRC>
