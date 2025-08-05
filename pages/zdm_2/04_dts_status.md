@@ -23,14 +23,15 @@ layout: two-cols-header
 ## Agenda
 
 * What is DTS?
-* DTS statistics Q3-Q4 2024.
-  + Issues
-  + Contributions.
-  + Features.
-  + Hardware support.
-* DTS current architecture and tests.
-* DTS new architecture and tests.
-* Roadmap Q1-Q2 2025
+* DTS components
+* DTS statistics
+  - Issues
+  - PRs
+  - Usptreaming
+* Recent changes
+* Ongoing work
+* Future plans
+* How to get involved?
 * Q&A
 
 ---
