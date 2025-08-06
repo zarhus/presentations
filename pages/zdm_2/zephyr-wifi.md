@@ -12,6 +12,11 @@ class: text-center
          style="margin-left:-20px;filter: invert(1);">
 </center>
 
+<!--
+Hello everyone! Today I will talk about virtualization on MCU and how to achieve
+it with CROSSCON Hypervisor.
+-->
+
 ---
 layout: two-cols-header
 ---
@@ -40,6 +45,11 @@ _Zarhus team leader, embedded and Linux enthusiast_
   <img src="/../img/zarhus_logo.png" height="220px" />
 </div>
 
+<!--
+My name is Daniil and I am the 3mdeb's Zarhus Team leader. A a bookworm, a
+cycling neerd, Linux kernel and embedded programming enthusiast.
+-->
+
 ---
 layout: two-cols-header
 ---
@@ -52,8 +62,7 @@ layout: two-cols-header
 - The CROSSCON Hypervisor
 - The Zephyr RTOS demo
 - Implementation
-- The final result
-- Cunclusions
+- The results
 - Q&A
 
 ::right::
@@ -61,6 +70,14 @@ layout: two-cols-header
 <div class="flex justify-center items-center">
   <img src="/../img/zdm-2-logo-crosscon-hyp-dhcp-demo.png" height="220px" />
 </div>
+
+<!--
+This talk will cover general information that is needed for you to port and
+launch your application on top of the CROSSCON Hypervisor. We will go through
+the CROSSCON Project introduction. Then we will discuss the CROSSCON Hypervisor
+and its features. After this we will cover the some of the demo and its
+implementation details.
+-->
 
 ---
 layout: two-cols-header
@@ -85,6 +102,19 @@ layout: two-cols-header
   <img src="/../img/crosscon-logo-2.png" width="200px" align="right">
 </div>
 
+<!--
+
+The CROSSCON Project focuses on security for IoT devices, providing components
+that increase the security (the CROSSCON hypervisor, multi factor
+authentication), as well as use cases, that demonstrate the improvements
+delivered to real world.
+
+We have already had one presentation and blogpost that cover launching the
+CROSSCON Hypervisor on RPi platforms. If you are interested in the security,
+virtualization and Linux kernel make sure to check it on the blog.3mdeb.com.
+
+-->
+
 ---
 layout: two-cols-header
 ---
@@ -95,9 +125,9 @@ layout: two-cols-header
 
 Features:
 - A static partitioning hypervisor
-    * Static CPU cores assignement
-    * Static interrupts assignement
-    * Static memory and devices assignement
+    * Static CPU cores assignment
+    * Static interrupts assignment
+    * Static memory and devices assignment
 - Has a scheduler for platforms with one CPU
 - ARM TrustZone and SGX enclaves TEE emulation
 - Multiple TEE support
@@ -112,6 +142,31 @@ GitHub: <github.com/crosscon/CROSSCON-Hypervisor>
 <div class="flex justify-center items-center">
   <img src="/../img/crosscon-logo-2.png" width="200px" align="right">
 </div>
+
+<!--
+
+The CROSSCON Hypervisor is a static partitioning hypervisor, that means you are
+responsible for managing all the platform resources at build time. Though it is
+a static partitioning hypervisor it can be launched on platforms with only one
+core available. For that the hypervisor uses a simple round-robin scheduler.
+
+The CROSSCON Hypervisor does not have a lot of emulation built in. It assign
+most of the resources directly to the virtual machines. That means it is not
+possible to have two virtual machines assign the same device. The only thing
+that is important from the user point of view and the CROSSCON Hypervisor does
+emulate is the ARM TrustZone and SGX enclaves technoloogies for Trusted
+Execution Environment.
+
+Because the CROSSCON Hypervisor does emulate the ARM TrustZone and SGX
+technologies it is now possible to have not only multiple VMs but multiple TEE
+on one platform. And the hypervisor does have a lot of freedom when configuring
+the TEE access. For example, some virtual machines can have several TEE VM
+assigned.
+
+The CROSSCON Hypervisor supports several platforms and architectures, including
+the most popular in the embedded world: ARM and RISC-V.
+
+-->
 
 ---
 layout: two-cols-header
@@ -159,6 +214,38 @@ Prerequisites:
 </div>
 
 <br><br>
+
+<!--
+
+Here is the architecture for our demo. This demo is a preparation for one of the
+CROSSCON Projects real world use cases: the two-factor authentication using
+Physical unclonable function.
+
+It features two VMs with one VM being a simple bare-metal application that is
+needed for testing two VM's configuration and the
+
+-->
+
+---
+layout: two-cols-header
+---
+
+## The Zephyr RTOS demo
+
+::left::
+
+The things to consider when launching smth. on top of the CROSSCON Hypervisor:
+- Set the application entry and load addresses.
+- Assign memory to the virtual machine in which the application will be running.
+- Assign memory and interrupts to the memory-mapped peripherals.
+
+::right::
+
+<div class="flex justify-center items-center">
+  <img src="/../img/dhcp-crosscon-zdm.png" width="100%" align="right">
+</div>
+
+<br><br><br><br><br>
 
 ---
 
@@ -272,7 +359,7 @@ Hypervisor configuration:
 layout: two-cols-header
 ---
 
-## Implementation
+## The results
 
 ::left::
 
