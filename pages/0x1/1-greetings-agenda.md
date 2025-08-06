@@ -70,6 +70,7 @@ If no questions I will try to spin off some discussion and gather some ideas.
 
 <br>
 
+<!-- markdownlint-disable-next-line MD013 -->
 #### &#x1F44B; 18:00 CET Welcome Zarhus Developers Meetup, by Piotr &#x1F448; You Are Here
 <br>
 
@@ -129,8 +130,8 @@ Let's start with the mission.
 anywhere especially after consuming whatever data lies in their path.
 - Paradigms like vibecoding or vibeopsing are new way of delivering value.
 - So, Companies developing embedded software must enhance their resilience to
-avoid losing the game, as it was seen in the consumer OS market. Despite that, there
-may still be some hope there.
+avoid losing the game, as it was seen in the consumer OS market. Despite that,
+there may still be some hope there.
 - That resiliency exists in the self-hosted and private models. Zarhus as an
 embedded system boot and security-focused team cannot ignore this trend without
 addressing it.
@@ -278,13 +279,16 @@ zoom: 0.9
 
 - Prerequisites:
     * At least basic Yocto understanding is required
-    * Understanding of kas (setup tool for bitbake based projects) is recommended
+    * Understanding of kas (setup tool for bitbake based projects) is
+      recommended
 - Keep checking progress on:
     * <https://docs.zarhus.com/>
     * <https://github.com/zarhus>
-        - we create roadmap under `zarhus-issues` and will track our progress there
+        - we create roadmap under `zarhus-issues` and will track our progress
+          there
         - we will inform you during DUGs
-- Currently most repositories are still in 3mdeb organization (32) in private gitlab (37)
+- Currently most repositories are still in 3mdeb organization (32) in private
+  gitlab (37)
     * <https://github.com/3mdeb> - search for `meta` keyword
     * most of the code is MIT-licensed
 - In total it is 87k lines of code of 17k we already contributed upstream.
@@ -302,7 +306,8 @@ zoom: 0.9
   product needs):
     * <https://shop.3mdeb.com/product-category/dasharo-entry-subscription/>
     * <https://shop.3mdeb.com/shop/open-source-hardware/rte/>
-- Through productised services: <https://shop.3mdeb.com/product-category/services/>
+- Through productised services:
+  <https://shop.3mdeb.com/product-category/services/>
     * Secure Boot integration for NXP and Rockchip
     * TPM and UEFI Secure Boot Assessment
     * TXE Secure Boot Assessment
@@ -375,7 +380,8 @@ zoom: 0.9
 - ML for embedded systems.
 - Boot time optimization for Slimbootloader bootstrapped industrial hardware.
 - Work on GPU and crypto.
-- Improve contribution to embedded Linux related projects `17065 insertions(+), 661 deletions(-)`
+- Improve contribution to embedded Linux related projects `17065 insertions(+),
+  661 deletions(-)`
 
 ---
 
@@ -417,16 +423,25 @@ animations during boot-up or hardware video decoding, which are common in
 consumer devices like Android phones require more work than usual.
 
 - **Why?**
-  Our main priority is security and long-term maintainability over cosmetic or typical user features.
-  We use official, well-maintained software (upstream kernels, bootloaders, and security environments) instead of code provided by hardware vendors that might be less secure or harder to keep updated.
+  Our main priority is security and long-term maintainability over cosmetic or
+  typical user features. We use official, well-maintained software (upstream
+  kernels, bootloaders, and security environments) instead of code provided
+  hardware vendors that might be less secure or harder to keep updated.
 
 - **How does this cause the limitation?**
-  By not using vendor-specific short-cuts or binary blobs (which might enable early graphics), we don’t get early access to graphics hardware. This means users may see a basic boot process instead of a polished animation until Linux is running.
+  By not using vendor-specific short-cuts or binary blobs (which might enable
+  early graphics), we don’t get early access to graphics hardware. This means
+  users may see a basic boot process instead of a polished animation until Linux
+  is running.
 
 - **Can this be improved?**
-  Yes, but it would take major effort and cost—as it would require serious boot-time optimization and possibly some compromise on our core values for security and maintainability.
+  Yes, but it would take major effort and cost—as it would require serious
+  boot-time optimization and possibly some compromise on our core values for
+  security and maintainability.
 
 - **What’s next?**
-  We prefer focusing on our original agreement (static images, secure, maintainable system). If you need these extra features, we can discuss them as new projects or support packages in the future.
+  We prefer focusing on our original agreement (static images, secure,
+  maintainable system). If you need these extra features, we can discuss them as
+  new projects or support packages in the future.
 
 -->
