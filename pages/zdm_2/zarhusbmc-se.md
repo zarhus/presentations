@@ -206,7 +206,7 @@ class: text-center
 
 <v-clicks>
 
-- Attempt configuring KCS in device tree
+- Attempt configuring KCS in `devicetree`
 - Perform probing from the host side
 - Address the GPIO
 - (Maybe) develop some tooling for easier porting 😉
