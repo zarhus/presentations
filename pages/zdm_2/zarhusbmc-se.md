@@ -136,10 +136,10 @@ Points to make:
 * We've got docs for AST2400, the addresses for KCS should be common between
   various models, it just an effort of testing it out.
 * The SoC has GPIOs that probe or drive various endpoints on the motherboard.
-* Unlike with KCS addresses, each vendor can wirte the SoC to their liking.
+* Unlike with KCS addresses, each vendor can write the SoC to their liking.
 * The GPIO definitions cannot be found in docs.
 * The GPIO definitions shall also be a part of DTS.
-* The definitons we currently have were made by Keno Fisher as a part of u-bmc
+* The definitions we currently have were made by Keno Fisher as a part of u-bmc
   porting, they're insufficient.
 -->
 
