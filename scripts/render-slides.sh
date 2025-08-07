@@ -6,8 +6,6 @@ render_slides() {
     local escaped_file
     local filename
     local input_file
-    local range
-    local output_file
 
     # Remove any surrounding quotes from the variables
     input_file=${1//\"/}
@@ -24,7 +22,7 @@ render_slides() {
     # Create temporary markdown file using the slide template
     sed -e "s/<DAY>/$day/g" -e "s/<SRC>/$escaped_file/g" slides-template.md > "$temp_slides_md"
 
-    docker run -it --rm --user $(id -u):$(id -g) \
+    docker run -it --rm --user "$(id -u)":"$(id -g)" \
       -v "$PWD:/repo" \
       -p 8000:8000 \
       mcr.microsoft.com/playwright:v1.50.0-noble \
