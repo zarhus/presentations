@@ -1,5 +1,5 @@
 ---
-theme: /@fs/repo/slidev-template/theme
+theme: /slides/slidev-template/theme
 layout: cover
 background: /intro.png
 class: text-center
@@ -12,7 +12,7 @@ class: text-center
 ### Q3 2025
 
 <center>
-    <img src="/@fs/repo/img/zarhus_logo.png" width="150px"
+    <img src="/slides/img/zarhus_logo.png" width="150px"
          style="margin-left:-20px;filter: invert(1);">
 </center>
 
@@ -41,7 +41,7 @@ layout: two-cols-header
 # What is DTS?
 
 <center>
-  <img src="/@fs/repo/img/solid-and-secure-bridge.png" width="300" style="margin-left:-20px">
+  <img src="/slides/img/solid-and-secure-bridge.png" width="300" style="margin-left:-20px">
 </center>
 
 * A set of tools running in a Yocto-based image
@@ -74,7 +74,7 @@ layout: two-cols-header
 
 # What is DTS?
 
-<center><img src="/@fs/repo/img/zdm_2/dts-gui-2.png" width="500"></center>
+<center><img src="/slides/img/zdm_2/dts-gui-2.png" width="500"></center>
 
 ---
 layout: two-cols-header
@@ -108,7 +108,7 @@ layout: two-cols-header
   - Q3-Q4 2025 - in terms of plans
 
 <br><br>
-<center><img src="/@fs/repo/img/zdm_2/dts_status_timeframe.png" width="600"></center>
+<center><img src="/slides/img/zdm_2/dts_status_timeframe.png" width="600"></center>
 
 ---
 layout: two-cols-header
@@ -116,7 +116,7 @@ layout: two-cols-header
 
 ## Statistics - issues
 
-<center><img src="/@fs/repo/img/zdm_2/dts_issues.png" width="650"></center>
+<center><img src="/slides/img/zdm_2/dts_issues.png" width="650"></center>
 
 <!--
 
@@ -134,7 +134,7 @@ layout: two-cols-header
 
 ## Statistics - dts-scripts PRs
 
-<center><img src="/@fs/repo/img/zdm_2/dasharo_prs_dts_scripts.png" width="650"></center>
+<center><img src="/slides/img/zdm_2/dasharo_prs_dts_scripts.png" width="650"></center>
 
 <!--
 
@@ -152,7 +152,7 @@ layout: two-cols-header
 
 ## Statistics - meta-dts PRs
 
-<center><img src="/@fs/repo/img/zdm_2/dasharo_prs_meta_dts.png" width="650"></center>
+<center><img src="/slides/img/zdm_2/dasharo_prs_meta_dts.png" width="650"></center>
 
 <!--
 
@@ -171,7 +171,7 @@ layout: two-cols-header
 ## Upstreaming
 
 <br>
-<center><img src="/@fs/repo/img/zdm_2/upstreaming_status.jpg" width="400"></center>
+<center><img src="/slides/img/zdm_2/upstreaming_status.jpg" width="400"></center>
 
 * Not much going on
 * We can do better
@@ -190,7 +190,7 @@ layout: two-cols-header
 * 2.1.2 (20/12/2024)
   - HCL report and DPP credentials fixes
 
-<center><img src="/@fs/repo/img/NS51-front-1.png" width="500"></center>
+<center><img src="/slides/img/NS51-front-1.png" width="500"></center>
 
 ---
 layout: two-cols-header
@@ -203,7 +203,7 @@ layout: two-cols-header
 * 2.2.0 (30/01/2025)
   - Add support for NovaCustom V56TU heads flavor
 
-<center><img src="/@fs/repo/img/v560tu-front.png" width="500"></center>
+<center><img src="/slides/img/v560tu-front.png" width="500"></center>
 
 ---
 layout: two-cols-header
@@ -216,7 +216,7 @@ layout: two-cols-header
 * 2.3.0 (20/03/2025)
   - Add support for NovaCustom V54TU heads flavor
 
-<center><img src="/@fs/repo/img/odroid_h4.jpg" width="400"></center>
+<center><img src="/slides/img/odroid_h4.jpg" width="400"></center>
 
 ---
 layout: two-cols-header
@@ -234,7 +234,7 @@ layout: two-cols-header
 
 <br>
 <br>
-<center><img src="/@fs/repo/img/logo_minio.webp" width="350"></center>
+<center><img src="/slides/img/logo_minio.webp" width="350"></center>
 
 ---
 layout: two-cols-header
@@ -244,7 +244,7 @@ layout: two-cols-header
 * 2.5.0 (11/06/2025)
   - Add SeaBIOS support (PC Engines APU2/3/4/6)
 
-<center><img src="/@fs/repo/img/apu2.png" width="450"></center>
+<center><img src="/slides/img/apu2.png" width="450"></center>
 
 ---
 layout: two-cols-header
@@ -308,7 +308,7 @@ layout: two-cols-header
 
 <br>
 
-<center><img src="/@fs/repo/img/zdm_2/dts_roadmap_v0.1.png" width="650"></center>
+<center><img src="/slides/img/zdm_2/dts_roadmap_v0.1.png" width="650"></center>
 
 ---
 layout: two-cols-header
@@ -337,7 +337,7 @@ layout: two-cols-header
 
 <br>
 
-<center><img src="/@fs/repo/img/zdm_2/dts_bug_bounty.png" width="350"></center>
+<center><img src="/slides/img/zdm_2/dts_bug_bounty.png" width="350"></center>
 
 ---
 layout: cover
@@ -348,6 +348,6 @@ class: text-center
 ## Q&A
 
 <center>
-    <img src="/@fs/repo/img/zarhus_logo.png" width="150px"
+    <img src="/slides/img/zarhus_logo.png" width="150px"
          style="margin-left:-20px;filter: invert(1);">
 </center>
