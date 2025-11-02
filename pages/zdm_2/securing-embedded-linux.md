@@ -208,9 +208,9 @@ for x86-64 booting:
   UKI_CMDLINE = "root=LABEL=${ROOTFS_LABEL} console=ttyS0,115200 quiet"
   ```
 
-    * `INIT_MANAGER` and `EFI_PROVIDER` is required by `uki.bbclass` while
+  * `INIT_MANAGER` and `EFI_PROVIDER` is required by `uki.bbclass` while
     `UKI_CMDLINE` contains kernel command-line that'll be embedded inside UKI.
-    * `IMAGE_BOOT_FILES` - list of files to put on boot partition.
+  * `IMAGE_BOOT_FILES` - list of files to put on boot partition.
 
 </v-click>
 
