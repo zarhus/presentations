@@ -26,7 +26,7 @@ bars_rte = plt.bar(
     label="RTE OS Releases",
 )
 
-plt.xticks(rotation=30,ha="right")
+plt.xticks(rotation=30, ha="right")
 
 plt.title(
     "Number of rte Public Releases Downloads per version",

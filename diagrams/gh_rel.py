@@ -2,6 +2,7 @@
 import argparse
 import os
 import sys
+
 import requests
 
 
@@ -13,8 +14,9 @@ def fetch_releases(repo, token=None):
         headers["Authorization"] = f"token {token}"
     page = 1
     while True:
-        resp = requests.get(url, headers=headers,
-                            params={"per_page": 100, "page": page}, timeout=30)
+        resp = requests.get(
+            url, headers=headers, params={"per_page": 100, "page": page}, timeout=30
+        )
         resp.raise_for_status()
         data = resp.json()
         if not data:
@@ -26,12 +28,15 @@ def fetch_releases(repo, token=None):
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Print download counts for every release in a GitHub repository")
+        description="Print download counts for every release in a GitHub repository"
+    )
     parser.add_argument("repo", help="repository in the form owner/name")
-    parser.add_argument("--token", help="GitHub personal access token "
-                                        "(or set GITHUB_TOKEN)")
-    parser.add_argument("--per-asset", action="store_true",
-                        help="show counts for each asset as well")
+    parser.add_argument(
+        "--token", help="GitHub personal access token " "(or set GITHUB_TOKEN)"
+    )
+    parser.add_argument(
+        "--per-asset", action="store_true", help="show counts for each asset as well"
+    )
     args = parser.parse_args()
 
     token = args.token or os.getenv("GITHUB_TOKEN")
@@ -54,4 +59,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

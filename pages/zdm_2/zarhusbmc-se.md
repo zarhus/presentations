@@ -66,9 +66,9 @@ layout: two-cols-header
 <v-clicks>
 
 - During last developer meetup:
-    + Discussed what OpenBMC is and it's role in proprietary world of computing
-    + Built and showcased OpenBMC running on a hardware
-    + Got UART, couldn't log in to Web UI
+  + Discussed what OpenBMC is and it's role in proprietary world of computing
+  + Built and showcased OpenBMC running on a hardware
+  + Got UART, couldn't log in to Web UI
 - Rebuilt the image with user mngmt support, ditched logging
 - Was able to log in via WebUI
 - ...but this revealed issues.
@@ -155,15 +155,15 @@ layout: two-cols-header
 
 - Community efforts: great positive feedback, opened up ZarhusBMC GH discussions
 - Performed stock firmware scoping:
-    + Method: `binwalk` disassembly, `QEMU` emulation
-    + Expectations: DTBs, GPIO defs., interface scoping 🫠
+  + Method: `binwalk` disassembly, `QEMU` emulation
+  + Expectations: DTBs, GPIO defs., interface scoping 🫠
 - Obtained UART access for stock FW:
-    + Method: Following Keno Fisher's work, tracing back the connections (Thanks
+  + Method: Following Keno Fisher's work, tracing back the connections (Thanks
     to Tim Ansell), finding `RX` pin to pair (with docs).
-    + Expectations: Stock FW UART access 💯
+  + Expectations: Stock FW UART access 💯
 - Scoping on a real HW:
-    + Method: check binaries, `sysfs`, platform states
-    + Expectations: Confirm suspicions, assess possibilities 🔍
+  + Method: check binaries, `sysfs`, platform states
+  + Expectations: Confirm suspicions, assess possibilities 🔍
 
 </v-clicks>
 

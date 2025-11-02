@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 dts = {}
 
 # Dasharo Tools Suite
-dts["v1.2.8"] = 23 # wic+iso
+dts["v1.2.8"] = 23  # wic+iso
 dts["v1.2.13"] = 50
 dts["v1.2.14"] = 49
 dts["v1.2.15"] = 23
@@ -16,7 +16,7 @@ dts["v1.2.16"] = 37
 dts["v1.2.17"] = 37
 dts["v1.2.18"] = 158
 dts["v1.2.19"] = 132
-dts["v1.2.20"] = 46 # only wic
+dts["v1.2.20"] = 46  # only wic
 dts["v1.2.21"] = 200
 dts["v1.2.22"] = 8
 dts["v1.2.23"] = 131
@@ -43,7 +43,7 @@ bars_dts = plt.bar(
     label="Dasharo Tools Suite Releases",
 )
 
-plt.xticks(rotation=30,ha="right")
+plt.xticks(rotation=30, ha="right")
 
 plt.title(
     "Number of DTS Public Releases Downloads per version",

@@ -277,23 +277,23 @@ zoom: 0.9
 # How community can use it?
 
 - Prerequisites:
-    * At least basic Yocto understanding is required
-    * Understanding of kas (setup tool for bitbake based projects) is
+  * At least basic Yocto understanding is required
+  * Understanding of kas (setup tool for bitbake based projects) is
       recommended
 - Keep checking progress on:
-    * <https://docs.zarhus.com/>
-    * <https://github.com/zarhus>
-        - we create roadmap under `zarhus-issues` and will track our progress
+  * <https://docs.zarhus.com/>
+  * <https://github.com/zarhus>
+    - we create roadmap under `zarhus-issues` and will track our progress
           there
-        - we will inform you during DUGs
+    - we will inform you during DUGs
 - Currently most repositories are still in 3mdeb organization (32) in private
   gitlab (37)
-    * <https://github.com/3mdeb> - search for `meta` keyword
-    * most of the code is MIT-licensed
+  * <https://github.com/3mdeb> - search for `meta` keyword
+  * most of the code is MIT-licensed
 - In total it is 87k lines of code of 17k we already contributed upstream.
 - Meanwhile for direct business needs we designed, developed and delivered over
   400k lines of code.
-    * With Zarhus we want to change this proportions.
+  * With Zarhus we want to change this proportions.
 
 ---
 zoom: 0.9
@@ -303,20 +303,20 @@ zoom: 0.9
 
 - Indirectly through Dasharo Entry Subscription or obtaining RTE (limited to
   product needs):
-    * <https://shop.3mdeb.com/product-category/dasharo-entry-subscription/>
-    * <https://shop.3mdeb.com/shop/open-source-hardware/rte/>
+  * <https://shop.3mdeb.com/product-category/dasharo-entry-subscription/>
+  * <https://shop.3mdeb.com/shop/open-source-hardware/rte/>
 - Through productised services:
   <https://shop.3mdeb.com/product-category/services/>
-    * Secure Boot integration for NXP and Rockchip
-    * TPM and UEFI Secure Boot Assessment
-    * TXE Secure Boot Assessment
-    * Intel Boot Guard Assessment
-    * U-Boot Hardening
-    * Boot Time Optimization Report
-    * Support Package and Workshop
-    * and many more
+  * Secure Boot integration for NXP and Rockchip
+  * TPM and UEFI Secure Boot Assessment
+  * TXE Secure Boot Assessment
+  * Intel Boot Guard Assessment
+  * U-Boot Hardening
+  * Boot Time Optimization Report
+  * Support Package and Workshop
+  * and many more
 - Through Training:
-    * <https://paceenterprisetraining.com>
+  * <https://paceenterprisetraining.com>
 - Or just contact us: <https://3mdeb.com/contact/#form>
 
 ---
@@ -366,8 +366,8 @@ zoom: 0.9
 # Zarhus Team Events Roadmap
 
 - Preliminary dates for future Zarhus Developers Meetups
-    * ZDM 0x2: **5th August 2025**
-    * ZDM 0x3: **4th November 2025**
+  * ZDM 0x2: **5th August 2025**
+  * ZDM 0x3: **4th November 2025**
 
 ---
 
@@ -388,9 +388,9 @@ zoom: 0.9
 
 - Github has only activity from Zarhus Team.
 - On Matrix we have our small community.
-    * <https://matrix.to/#/#zarhus:matrix.3mdeb.com>
-    * Three rooms: General, Support and Random
-    * Currently space has 22 members.
+  * <https://matrix.to/#/#zarhus:matrix.3mdeb.com>
+  * Three rooms: General, Support and Random
+  * Currently space has 22 members.
 
 ---
 layout: cover

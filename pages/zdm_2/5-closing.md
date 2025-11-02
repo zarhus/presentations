@@ -75,6 +75,6 @@ Thank you for joining our first event. We would do whatever is possible to make
 it better.
 
 Our goal is to bring you information about achievements in system boot and
-security, so you can improve trustworthiness of your 
+security, so you can improve trustworthiness of your
 
 -->
