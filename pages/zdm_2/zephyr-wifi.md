@@ -89,10 +89,10 @@ layout: two-cols-header
 
 - A project that focuses on security for IoT devices
 - More information:
-    * CROSSCON, its Hypervisor, and Zarhus blog post <blog.3mdeb.com/2025/2025-04-10-crosscon-its-hypervisor-and-zarhus>
-    * Linkedin: <www.linkedin.com/company/crosscon-eu>
-    * Website: <crosscon.eu>
-    * GitHub: <github.com/crosscon>
+  * CROSSCON, its Hypervisor, and Zarhus blog post <blog.3mdeb.com/2025/2025-04-10-crosscon-its-hypervisor-and-zarhus>
+  * Linkedin: <www.linkedin.com/company/crosscon-eu>
+  * Website: <crosscon.eu>
+  * GitHub: <github.com/crosscon>
 
 <br><br><br><br>
 
@@ -125,9 +125,9 @@ layout: two-cols-header
 
 Features:
 - A static partitioning hypervisor
-    * Static CPU cores assignment
-    * Static interrupts assignment
-    * Static memory and devices assignment
+  * Static CPU cores assignment
+  * Static interrupts assignment
+  * Static memory and devices assignment
 - Has a scheduler for platforms with one CPU
 - ARM TrustZone and SGX enclaves TEE emulation
 - Multiple TEE support
