@@ -205,6 +205,20 @@ For more information check <https://review.coreboot.org/c/flashrom/+/89222> and
 <https://github.com/Dasharo/dasharo-issues/issues/952>.
 
 ---
+theme: ../slidev-template/theme
+layout: cover
+background: /intro.png
+class: text-center
+---
+
+## Dasharo Tools Suite development and testing insights: a new DTS End to End testing methodology
+
+<center>
+    <img src="../../img/zarhus_logo.png" width="150px"
+         style="margin-left:-20px;filter: invert(1);">
+</center>
+
+---
 
 ## DTS development and testing insights: challenges
 
