@@ -15,6 +15,15 @@ class: text-center
 </center>
 
 ---
+
+# Agenda
+
+* Trusted Execution Environment (TEE)
+* Verified Boot and Root of Trust
+* Encryption
+* Virtualization
+
+---
 layout: cover
 background: /intro.png
 class: text-center
