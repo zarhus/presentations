@@ -86,7 +86,7 @@ layout: two-cols-header
 </center>
 
 Initial goals:
-* Support end-users while deploying Dasharo firmware.
+* Support end-users in deploying Dasharo firmware.
 * Support Dasharo firmware developers during firmware development.
 
 ---
@@ -103,16 +103,14 @@ layout: two-cols-header
 
 ::right::
 
-* A set of tools running in a Yocto-based image.
+* A set of tools running in a Yocto-based Linux image.
 * Dasharo Zero Touch Initial Deployment (i.e. DZTID), that is, a list of
   automated workflows:
   * Initial deployment for Dasharo firmware.
   * Update for Dasharo firmware.
   * Transition for Dasharo firmware.
-* Dasharo Hardware Compatibility List Report (i.e. Dasharo HCL or DTS HCL; you
-  can find more about it [here][dasharo-hcl-docs]).
-* Fusing workflow for some Dasharo firmware (for more information about
-  fusing check [Dasharo documentation][fusing-docs].
+* Dasharo Hardware Compatibility List Report (i.e. Dasharo HCL or DTS HCL).
+* Fusing workflow for some platforms that support Dasharo firmware.
 * Firmware recovery workflow.
 
 ---
@@ -153,7 +151,7 @@ layout: two-cols-header
   <img src="/slides/img/0x3/dts-releases.svg" width="700" style="margin-left:-20px">
 </center>
 
-The key features: news firmware support (for several platforms, including:
+The key features: new firmware support (for several platforms, including:
 **MSI PRO Z690-A**, **MSI PRO Z790-A**, **NovaCustom V540TU**, **Novacustom
 V560TU**, etc.), a **fusing workflow** for NovaCustom V540TU and Novacustom
 V560TU, and a DTS End To End testing methodology.
@@ -359,7 +357,7 @@ layout: two-cols-header
 * Further integrate DTS with other members of Dasharo Universe:
   - fwupd?
   - Further integration with Zarhus Provisioning Box for Root of Trust and Chain
-    of Trust verification and atteststion.
+    of Trust verification and attestation.
   - HCL and other atteststion procedures developed alongise ZarhusBMC.
 * New platforms and firmware support:
   - Servers: Gigabyte MZ33-AR1, ASRock Rack SPC741D8-2L2T/BCM, and others.
