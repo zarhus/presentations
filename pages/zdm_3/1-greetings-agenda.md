@@ -97,8 +97,9 @@ If no questions I will try to spin off some discussion and gather some ideas.
 - Dasharo and Zarhus Ecosystem
 - Dasharo and Zarhus Release Process vision and execution
 - Qubes Air motivation recap and Zarhus role in it
-- Zarhus Hardware Certification Program and related products
 - Zarhus Business Model v0.2
+- Zarhus Ecosystem Alignment
+- Zarhus Hardware Certification
 
 <!--
 
@@ -219,6 +220,19 @@ documentation repositories (docs.zarhus.com).
 upstream opportunities based on 3mdeb team preparation materials.
 
 -->
+
+---
+
+<figure>
+  <img src="/slides/img/zdm_3/30N-p1-zhc-pre-compliance.svg" width="800px">
+</figure>
+
+---
+
+<figure>
+  <img src="/slides/img/zdm_3/30N-p2-zhc-pre-compliance.svg" width="900px">
+</figure>
+
 ---
 
 # Community
