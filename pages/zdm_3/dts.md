@@ -300,16 +300,71 @@ layout: two-cols-header
 </center>
 
 ---
+theme: ../slidev-template/theme
+layout: cover
+background: /intro.png
+class: text-center
+---
+
+## Dasharo Tools Suite roadmap: What is next?
+
+<center>
+    <img src="../../img/zarhus_logo.png" width="150px"
+         style="margin-left:-20px;filter: invert(1);">
+</center>
+
+---
+layout: two-cols-header
+---
 
 ## DTS roadmap: v2.7.2
 
-TODO
+::left::
 
+The key features:
+* Fully separated UI that will be shared between other Dasharo and Zarhus
+  projects.
+* Full platforms metadata migratoin to `Dasharo/dts-configs`.
+* Publishing DTS E2E test results on OSFV Dashboard.
+* Some minor fixes.
+
+For more information check
+<https://github.com/Dasharo/dasharo-issues/milestone/85>.
+
+::right::
+
+<center>
+  <img src="/slides/img/0x3/dts-zpb-ui-sharing.png" width="300" style="margin-left:-20px">
+</center>
+
+---
+layout: two-cols-header
 ---
 
 ## DTS roadmap: future releases
 
-TODO
+::left::
+
+<br>
+<br>
+<br>
+<br>
+
+<center>
+  <img src="/slides/img/0x3/dts-in-dasharo-universe.png" width="500" style="margin-left:-20px">
+</center>
+
+::right::
+
+* Further integrate DTS with other members of Dasharo Universe:
+  - fwupd?
+  - Further integration with Zarhus Provisioning Box for Root of Trust and Chain
+    of Trust verification and atteststion.
+  - HCL and other atteststion procedures developed alongise ZarhusBMC.
+* New platforms and firmware support:
+  - Servers: Gigabyte MZ33-AR1, ASRock Rack SPC741D8-2L2T/BCM, and others.
+  - Others: NovaCustom laptops, NovaCustom NUC Box, MSI PRO Z690-A and MSI PRO
+    Z790-P, and others.
 
 ---
 layout: cover
