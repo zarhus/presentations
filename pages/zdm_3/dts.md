@@ -64,6 +64,11 @@ layout: two-cols-header
 - DTS development and testing insights
 - DTS roadmap
 
+<br>
+
+For the dipper dive into tech details and reports check out the blog post that
+will be published soon on <https://blog.3mdeb.com/>.
+
 ::right::
 
 <center>
