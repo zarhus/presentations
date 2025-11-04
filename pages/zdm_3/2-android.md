@@ -640,6 +640,7 @@ theme: ../slidev-template/theme
   align-items: center; height: 90%;"
 >
   <div style="transform: scale(1.5);">
+
 ```mermaid
 graph TB
     subgraph "Boot Verification"
@@ -676,11 +677,11 @@ graph TB
     style DE fill:#52BE80,stroke:#27AE60,stroke-width:2px,color:#fff
     style CE fill:#F39C12,stroke:#E67E22,stroke-width:2px,color:#fff
 ```
+
   </div>
 </div>
 
 <!--
-
 
 The Gatekeeper subsystem performs device pattern/password authentication in a
 Trusted Execution Environment (TEE). Gatekeeper enrolls and verifies passwords
@@ -693,7 +694,6 @@ that is signed with a per-boot HMAC key that is available only to secure
 components, and this token is sent to the hardware-backed Keystore. That is, a
 Gatekeeper authentication token notifies Keystore that authentication-bound
 keys (for example, keys that apps have created) can be used by apps.
-
 
 KeyMint trusted app (TA)
 Software running in a secure context, most often in TrustZone on an ARM
@@ -710,7 +710,6 @@ at a particular point in time.
 https://source.android.com/docs/security/features/authentication/gatekeeper
 
 -->
-
 
 ---
 layout: cover
@@ -756,7 +755,6 @@ Attestation details: page 31in:
 https://services.google.com/fh/files/misc/android-security-paper-2024.pdf
 
 -->
-
 
 ---
 layout: cover
