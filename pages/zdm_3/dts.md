@@ -123,38 +123,86 @@ layout: two-cols-header
 <center>DTS is a key component in Dasharo Universe!</center>
 
 ---
+theme: ../slidev-template/theme
+layout: cover
+background: /intro.png
+class: text-center
+---
+
+## Dasharo Tools Suite status: releases and statistics
+
+<center>
+    <img src="../../img/zarhus_logo.png" width="150px"
+         style="margin-left:-20px;filter: invert(1);">
+</center>
+
+---
 layout: two-cols-header
 ---
 
 ## DTS status: releases vs key features implemented
 
-::left::
+<br>
 
-TODO
+<center>
+  <img src="/slides/img/0x3/dts-releases.svg" width="700" style="margin-left:-20px">
+</center>
 
-::right::
+The key features: news firmware support (for several platforms, including:
+**MSI PRO Z690-A**, **MSI PRO Z790-A**, **NovaCustom V540TU**, **Novacustom
+V560TU**, etc.), a **fusing workflow** for NovaCustom V540TU and Novacustom
+V560TU, and a DTS End To End testing methodology.
 
-TODO
+For more information check <https://github.com/Dasharo/meta-dts/releases>
 
----
-layout: two-cols-header
 ---
 
 ## DTS status: issues
 
-::left::
+<center>
+  <img src="/slides/img/0x3/dts-issues.png" width="700" style="margin-left:-20px">
+</center>
 
-TODO
+---
 
-::right::
+## DTS status: Dasharo/meta-dts PRs
 
-TODO
+<center>
+  <img src="/slides/img/0x3/meta-dts-prs.png" width="700" style="margin-left:-20px">
+</center>
+
+---
+
+## DTS status: Dasharo/dts-scripts PRs
+
+<center>
+  <img src="/slides/img/0x3/dts-scripts-prs.png" width="700" style="margin-left:-20px">
+</center>
+
+---
+
+## DTS status: Dasharo/dts-configss PRs
+
+<center>
+  <img src="/slides/img/0x3/dts-configs-prs.png" width="700" style="margin-left:-20px">
+</center>
 
 ---
 
 ## DTS status: contributions
 
-TODO
+<br>
+
+<center>A contribution to flashrom project from Zarhus Team!</center>
+
+<br>
+
+<center>
+  <img src="/slides/img/0x3/dts-contribution.png" width="700" style="margin-left:-20px">
+</center>
+
+For more information check <https://review.coreboot.org/c/flashrom/+/89222> and
+<https://github.com/Dasharo/dasharo-issues/issues/952>.
 
 ---
 
