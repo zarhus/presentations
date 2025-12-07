@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="705px" preserveAspectRatio="none" style="width:1364px;height:705px;background:#F5F5F5;" version="1.1" viewBox="0 0 1364 705" width="1364px" zoomAndPan="magnify"><defs><filter height="300%" id="f3nmwofcwwz7c" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#272727" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="533" x="411" y="26.708">ZHC Pre-Compliance Report - Phase 2: Hardware Validation</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="67" x2="67" y1="121.25" y2="618.5078"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="436" x2="436" y1="121.25" y2="618.5078"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="711" x2="711" y1="121.25" y2="618.5078"/><text fill="#272727" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="68" x="30" y="117.9482">Customer</text><ellipse cx="67" cy="47.9531" fill="#F5F5F5" filter="url(#f3nmwofcwwz7c)" rx="8" ry="8" style="stroke: #38D430; stroke-width: 2.0;"/><path d="M67,55.9531 L67,82.9531 M54,63.9531 L80,63.9531 M67,82.9531 L54,97.9531 M67,82.9531 L80,97.9531 " fill="none" filter="url(#f3nmwofcwwz7c)" style="stroke: #38D430; stroke-width: 2.0;"/><text fill="#272727" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="68" x="30" y="630.5029">Customer</text><ellipse cx="67" cy="643.8047" fill="#F5F5F5" filter="url(#f3nmwofcwwz7c)" rx="8" ry="8" style="stroke: #38D430; stroke-width: 2.0;"/><path d="M67,651.8047 L67,678.8047 M54,659.8047 L80,659.8047 M67,678.8047 L54,693.8047 M67,678.8047 L80,693.8047 " fill="none" filter="url(#f3nmwofcwwz7c)" style="stroke: #38D430; stroke-width: 2.0;"/><rect fill="#F5F5F5" filter="url(#f3nmwofcwwz7c)" height="32.625" style="stroke: #38D430; stroke-width: 2.0;" width="180" x="344" y="83.625"/><text fill="#272727" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="166" x="351" y="105.4766">TL/PM/EM/Founder</text><rect fill="#F5F5F5" filter="url(#f3nmwofcwwz7c)" height="32.625" style="stroke: #38D430; stroke-width: 2.0;" width="180" x="344" y="617.5078"/><text fill="#272727" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="166" x="351" y="639.3594">TL/PM/EM/Founder</text><rect fill="#F5F5F5" filter="url(#f3nmwofcwwz7c)" height="32.625" style="stroke: #38D430; stroke-width: 2.0;" width="130" x="644" y="83.625"/><text fill="#272727" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="116" x="651" y="105.4766">Zarhus Team</text><rect fill="#F5F5F5" filter="url(#f3nmwofcwwz7c)" height="32.625" style="stroke: #38D430; stroke-width: 2.0;" width="130" x="644" y="617.5078"/><text fill="#272727" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="116" x="651" y="639.3594">Zarhus Team</text><rect fill="#F5F5F5" filter="url(#f3nmwofcwwz7c)" height="3" style="stroke: #F5F5F5; stroke-width: 1.0;" width="1349" x="3" y="151.8164"/><line style="stroke: #38D430; stroke-width: 1.0;" x1="3" x2="1352" y1="151.8164" y2="151.8164"/><line style="stroke: #38D430; stroke-width: 1.0;" x1="3" x2="1352" y1="154.8164" y2="154.8164"/><rect fill="#F5F5F5" filter="url(#f3nmwofcwwz7c)" height="23.1328" style="stroke: #38D430; stroke-width: 2.0;" width="239" x="558" y="141.25"/><text fill="#272727" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="220" x="564" y="157.3169">Phase 2: Hardware Validation</text><path d="M8,179.3828 L8,219.3828 L771,219.3828 L771,189.3828 L761,179.3828 L8,179.3828 " fill="#FBFB77" filter="url(#f3nmwofcwwz7c)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M761,179.3828 L761,189.3828 L771,189.3828 L761,179.3828 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="306" x="220" y="196.4497">Purpose: Verify and confirm Phase 1 discoveries</text><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="326" x="220" y="211.5825">Focus: RoT/CoT validation through hardware testing</text><polygon fill="#272727" points="424,245.7813,434,249.7813,424,253.7813,428,249.7813" style="stroke: #272727; stroke-width: 1.0;"/><line style="stroke: #272727; stroke-width: 1.0;" x1="67" x2="430" y1="249.7813" y2="249.7813"/><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="345" x="74" y="244.7153">Hardware access approved\n(Lab/Temporary/Remote)</text><polygon fill="#272727" points="699,274.9141,709,278.9141,699,282.9141,703,278.9141" style="stroke: #272727; stroke-width: 1.0;"/><line style="stroke: #272727; stroke-width: 1.0;" x1="436" x2="705" y1="278.9141" y2="278.9141"/><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="251" x="443" y="273.8481">Hardware provided + P1 validation plan</text><line style="stroke: #272727; stroke-width: 1.0;" x1="711" x2="753" y1="308.0469" y2="308.0469"/><line style="stroke: #272727; stroke-width: 1.0;" x1="753" x2="753" y1="308.0469" y2="321.0469"/><line style="stroke: #272727; stroke-width: 1.0;" x1="712" x2="753" y1="321.0469" y2="321.0469"/><polygon fill="#272727" points="722,317.0469,712,321.0469,722,325.0469,718,321.0469" style="stroke: #272727; stroke-width: 1.0;"/><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="438" x="718" y="302.981">HCL dumps collection\n(boot logs, TPM measurements,\nTEE status)</text><line style="stroke: #272727; stroke-width: 1.0;" x1="711" x2="753" y1="350.1797" y2="350.1797"/><line style="stroke: #272727; stroke-width: 1.0;" x1="753" x2="753" y1="350.1797" y2="363.1797"/><line style="stroke: #272727; stroke-width: 1.0;" x1="712" x2="753" y1="363.1797" y2="363.1797"/><polygon fill="#272727" points="722,359.1797,712,363.1797,722,367.1797,718,363.1797" style="stroke: #272727; stroke-width: 1.0;"/><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="474" x="718" y="345.1138">RoT/CoT verification\n(bootloader secure boot,\nboot chain authentication)</text><line style="stroke: #272727; stroke-width: 1.0;" x1="711" x2="753" y1="398.3789" y2="398.3789"/><line style="stroke: #272727; stroke-width: 1.0;" x1="753" x2="753" y1="398.3789" y2="411.3789"/><line style="stroke: #272727; stroke-width: 1.0;" x1="712" x2="753" y1="411.3789" y2="411.3789"/><polygon fill="#272727" points="722,407.3789,712,411.3789,722,415.3789,718,411.3789" style="stroke: #272727; stroke-width: 1.0;"/><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="357" x="718" y="393.313">TPM integration test\n(if present - separate component)</text><path d="M1087,376.1797 L1087,416.1797 L1338,416.1797 L1338,386.1797 L1328,376.1797 L1087,376.1797 " fill="#FBFB77" filter="url(#f3nmwofcwwz7c)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1328,376.1797 L1328,386.1797 L1338,386.1797 L1328,376.1797 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="230" x="1093" y="393.2466">TPM: Hardware-based cryptographic</text><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="203" x="1093" y="408.3794">operations, PCR measurements</text><line style="stroke: #272727; stroke-width: 1.0;" x1="711" x2="753" y1="452.6445" y2="452.6445"/><line style="stroke: #272727; stroke-width: 1.0;" x1="753" x2="753" y1="452.6445" y2="465.6445"/><line style="stroke: #272727; stroke-width: 1.0;" x1="712" x2="753" y1="465.6445" y2="465.6445"/><polygon fill="#272727" points="722,461.6445,712,465.6445,722,469.6445,718,465.6445" style="stroke: #272727; stroke-width: 1.0;"/><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="354" x="718" y="447.5786">TEE integration test\n(if present - separate component)</text><path d="M1084,430.4453 L1084,470.4453 L1286,470.4453 L1286,440.4453 L1276,430.4453 L1084,430.4453 " fill="#FBFB77" filter="url(#f3nmwofcwwz7c)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1276,430.4453 L1276,440.4453 L1286,440.4453 L1276,430.4453 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="181" x="1090" y="447.5122">TEE: Software-based trusted</text><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="147" x="1090" y="462.645">execution environment</text><polygon fill="#272727" points="447,532.1094,437,536.1094,447,540.1094,443,536.1094" style="stroke: #272727; stroke-width: 1.0;"/><line style="stroke: #272727; stroke-width: 1.0;" x1="441" x2="710" y1="536.1094" y2="536.1094"/><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="142" x="453" y="531.0435">P2 Report deliverables</text><path d="M716,484.7109 L716,569.7109 L889,569.7109 L889,494.7109 L879,484.7109 L716,484.7109 " fill="#FBFB77" filter="url(#f3nmwofcwwz7c)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M879,484.7109 L879,494.7109 L889,494.7109 L879,484.7109 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="147" x="722" y="501.7778">- Validated HCL dumps</text><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="136" x="722" y="516.9106">- RoT/CoT test results</text><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="139" x="722" y="532.0435">- Lab Assembly Guide</text><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="127" x="722" y="547.1763">- Full lifecycle report</text><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="152" x="722" y="562.3091">- Validated gap analysis</text><polygon fill="#272727" points="78,596.5078,68,600.5078,78,604.5078,74,600.5078" style="stroke: #272727; stroke-width: 1.0;"/><line style="stroke: #272727; stroke-width: 1.0;" x1="72" x2="435" y1="600.5078" y2="600.5078"/><text fill="#272727" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="84" y="595.4419">P2 Presentation\n(verified findings)</text><!--MD5=[cdcf92de8516b3597da8685ca606d978]
+@startuml
+
+skinparam {
+    DefaultFontColor #272727
+    BackgroundColor #f5f5f5
+    ArrowColor #272727
+    ActorBorderColor #38d430
+    ActorBackgroundColor #f5f5f5
+    ActorFontColor #272727
+    ParticipantBorderColor #38d430
+    ParticipantBackgroundColor #f5f5f5
+    ParticipantFontColor #272727
+    LifeLineBorderColor #38d430
+    LifeLineBackgroundColor #f5f5f5
+}
+
+skinparam sequence {
+    DividerBackgroundColor #f5f5f5
+    DividerBorderColor #38d430
+    DividerFontColor #272727
+    ParticipantPadding 20
+    ParticipantBorderThickness 2
+    ParticipantFontSize 16
+    ParticipantFontStyle bold
+}
+
+title ZHC Pre-Compliance Report - Phase 2: Hardware Validation
+
+actor Customer
+participant "TL/PM/EM/Founder" as PM
+participant "Zarhus Team" as Team
+
+== Phase 2: Hardware Validation ==
+note over Customer, Team
+  Purpose: Verify and confirm Phase 1 discoveries
+  Focus: RoT/CoT validation through hardware testing
+end note
+
+Customer -> PM: Hardware access approved\\n(Lab/Temporary/Remote)
+PM -> Team: Hardware provided + P1 validation plan
+Team -> Team: HCL dumps collection\\n(boot logs, TPM measurements,\\nTEE status)
+Team -> Team: RoT/CoT verification\\n(bootloader secure boot,\\nboot chain authentication)
+Team -> Team: TPM integration test\\n(if present - separate component)
+note right
+  TPM: Hardware-based cryptographic
+  operations, PCR measurements
+end note
+Team -> Team: TEE integration test\\n(if present - separate component)
+note right
+  TEE: Software-based trusted
+  execution environment
+end note
+Team -> PM: P2 Report deliverables
+note right
+  - Validated HCL dumps
+  - RoT/CoT test results
+  - Lab Assembly Guide
+  - Full lifecycle report
+  - Validated gap analysis
+end note
+PM -> Customer: P2 Presentation\\n(verified findings)
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 11:22:07 CET 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 17.0.16+8-Debian-1deb12u1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

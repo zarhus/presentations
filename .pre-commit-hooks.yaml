@@ -9,3 +9,6 @@
   description: Sorts mkdocs.yml file
   entry: sort-mkdocs
   language: python
+
+- id: check-added-large-files
+  args: ['--maxkb','1000']
