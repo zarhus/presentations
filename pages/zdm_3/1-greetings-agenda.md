@@ -183,12 +183,12 @@ of Zarhus Ecosystem into Zarhus Hardware Certification
   - The goal is to improve communication with customers, but also slightly bigger
     strategy of contributing to reference architectures, narrow promise and
     business value and deliver.
-  - Correct and more systematic approach would also help us fulfil compliance 
+  - Correct and more systematic approach would also help us fulfil compliance
     requirements.
   - It is not always clear that some Zarhus Hardware Certification need early
     analysis of Root of Trust (aka TrustRoot assessment) or figuring out assembling
     as well as writing down procedures how to accomplish it (aka Lab Assembly
-    Guide). To improve communication we introduce those two terms for existing 
+    Guide). To improve communication we introduce those two terms for existing
     processes, tooling and Background IP.
 
 -->
@@ -281,4 +281,3 @@ class: text-center
 * **Existing Product Integration Focus**: Maximizes leverage of existing Zarhus
   products and components (80% of effort), with 20% buffer for bug fixes and
   ad-hoc support.
-
