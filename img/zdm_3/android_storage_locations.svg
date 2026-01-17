@@ -1,0 +1,151 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="deGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7B68EE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6A5ACD;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#2C3E50">
+    Android Storage Locations
+  </text>
+
+  <!-- Timeline bar -->
+  <line x1="100" y1="90" x2="700" y2="90" stroke="#95A5A6" stroke-width="3"/>
+  <circle cx="100" cy="90" r="8" fill="#E74C3C"/>
+  <circle cx="400" cy="90" r="8" fill="#F39C12"/>
+  <text x="100" y="115" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#7F8C8D">Device Boot</text>
+  <text x="400" y="115" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#7F8C8D">User Unlock</text>
+
+  <!-- Device Encrypted (DE) Storage -->
+  <rect x="50" y="150" width="320" height="380" rx="10" fill="url(#deGradient)" filter="url(#shadow)"/>
+
+  <!-- DE Header -->
+  <text x="210" y="185" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">
+    Device Encrypted (DE)
+  </text>
+
+  <!-- DE Icon - Unlocked padlock -->
+  <g transform="translate(180, 200)">
+    <rect x="10" y="20" width="40" height="35" rx="3" fill="white" opacity="0.9"/>
+    <path d="M 20,20 Q 20,5 30,5 Q 40,5 40,20" stroke="white" stroke-width="4" fill="none" opacity="0.9"/>
+    <circle cx="30" cy="35" r="4" fill="#4A90E2"/>
+    <rect x="28" y="35" width="4" height="10" fill="#4A90E2"/>
+  </g>
+
+  <!-- DE Availability -->
+  <rect x="70" y="270" width="280" height="50" rx="5" fill="white" opacity="0.2"/>
+  <text x="210" y="290" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    ⏱️ AVAILABLE
+  </text>
+  <text x="210" y="310" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="white">
+    After device boots
+  </text>
+
+  <!-- DE Protection -->
+  <text x="210" y="345" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="white">
+    🛡️ Protection:
+  </text>
+
+  <text x="80" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="white">
+    • Hardware secret
+  </text>
+  <text x="80" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="white">
+    • TEE software verification
+  </text>
+  <text x="80" y="415" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="white">
+    • Verified Boot check
+  </text>
+
+  <!-- DE Use Cases -->
+  <rect x="70" y="440" width="280" height="75" rx="5" fill="white" opacity="0.15"/>
+  <text x="210" y="460" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+    Use Cases:
+  </text>
+  <text x="210" y="480" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+    Alarm clock, accessibility services,
+  </text>
+  <text x="210" y="498" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+    phone calls, system services
+  </text>
+
+  <!-- Credential Encrypted (CE) Storage -->
+  <rect x="430" y="150" width="320" height="380" rx="10" fill="url(#ceGradient)" filter="url(#shadow)"/>
+
+  <!-- CE Header -->
+  <text x="590" y="185" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">
+    Credential Encrypted (CE)
+  </text>
+
+  <!-- CE Icon - Locked padlock -->
+  <g transform="translate(560, 200)">
+    <rect x="10" y="20" width="40" height="35" rx="3" fill="white" opacity="0.9"/>
+    <path d="M 20,20 L 20,10 Q 20,5 30,5 Q 40,5 40,10 L 40,20" stroke="white" stroke-width="4" fill="none" opacity="0.9"/>
+    <circle cx="30" cy="35" r="4" fill="#7B68EE"/>
+    <rect x="28" y="35" width="4" height="10" fill="#7B68EE"/>
+  </g>
+
+  <!-- CE Availability -->
+  <rect x="450" y="270" width="280" height="50" rx="5" fill="white" opacity="0.2"/>
+  <text x="590" y="290" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    🔐 AVAILABLE
+  </text>
+  <text x="590" y="310" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="white">
+    After user unlocks device
+  </text>
+
+  <!-- CE Protection -->
+  <text x="590" y="345" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="white">
+    🛡️ Protection:
+  </text>
+
+  <text x="460" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="white">
+    • All DE protections +
+  </text>
+  <text x="460" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="white">
+    • User credential required
+  </text>
+  <text x="460" y="415" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="white">
+    • Hardware brute-force protection
+  </text>
+
+  <!-- CE Use Cases -->
+  <rect x="450" y="440" width="280" height="75" rx="5" fill="white" opacity="0.15"/>
+  <text x="590" y="460" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="white">
+    Use Cases:
+  </text>
+  <text x="590" y="480" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+    Personal data, messages, photos,
+  </text>
+  <text x="590" y="498" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+    most app data
+  </text>
+
+  <!-- Arrow showing progression -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#E67E22" />
+    </marker>
+  </defs>
+  <line x1="380" y1="340" x2="420" y2="340" stroke="#E67E22" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="400" y="330" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#E67E22">
+    Enhanced
+  </text>
+  <text x="400" y="360" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#E67E22">
+    Security
+  </text>
+
+  <!-- Footer note -->
+  <rect x="100" y="555" width="600" height="30" rx="5" fill="#ECF0F1"/>
+  <text x="400" y="575" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34495E">
+    💡 Most apps should use CE storage for user data to maximize security
+  </text>
+</svg>
